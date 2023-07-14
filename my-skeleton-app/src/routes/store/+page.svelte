@@ -26,7 +26,7 @@
 			<h1>gdyu store</h1>
 		</div>
 		{#each products as product}
-			<ProductCard {product} />
+			<ProductCard product = {product} />
 		{/each}
 		<div class="col-span-3">
 			<button class="btn variant-filled-primary">checkout</button>

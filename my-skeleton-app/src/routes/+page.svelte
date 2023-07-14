@@ -3,13 +3,13 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 </script>
 
-<div class="container h-full mx-auto flex flex-col justify-center items-center">
+<div class="container mx-auto flex flex-col justify-center items-center">
 	<!--<div class="space-y-5"> -->
-	<div class="flex justify-center items-center bg-[#19032b] w-screen h-[650px] -z-10">
-		<div class="flex justify-center items-center">
+	<div
+		class="flex justify-center items-center bg-[#19032b] w-screen min-h-none max-h-xl static insert-0 -z-10"
+	>
+		<div class="flex justify-center">
 			<!--
-
-			<img src="assets/logo.svg" alt="" class="w-1/2 z-10 absolute top-0 left-0" />
 			-->
 			<img
 				src="assets/logo-small.png"
@@ -69,13 +69,7 @@
 		<!-- ... -->
 	</Accordion>
 	<section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-		<div>
-			<img
-				class="h-auto max-w-full rounded-lg"
-				src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
-				alt=""
-			/>
-		</div>
+		<div />
 	</section>
 	<section>
 		<div class="div mb-20 flex-row justify-center items-center">
