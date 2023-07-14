@@ -68,11 +68,58 @@
 		</AccordionItem>
 		<!-- ... -->
 	</Accordion>
-	<section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-		<div />
-	</section>
+
+	<h1 class="h1 text-center pt-20">Our Projects:</h1>
+	<div class="max-w-3xl gallery">
+		<section class="mt-20 grid grid-cols-2 md:grid-cols-3 gap-1">
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+
+			<div>
+				<img
+					class="h-auto max-w-full rounded-lg"
+					src="https://images.unsplash.com/photo-1553184570-557b84a3a308?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzY2NTF8&ixlib=rb-4.0.3&w=256&h=256&auto=format&fit=crop"
+					alt=""
+				/>
+			</div>
+		</section>
+	</div>
 	<section>
-		<div class="div mb-20 flex-row justify-center items-center">
+		<div class="mb-20 flex-row justify-center items-center">
 			<button class="mt-20 btn variant-filled">Check out our work</button>
 			<button class="btn variant-filled">Browse our Merch Shop!</button>
 			<button class="btn variant-filled">Get in Touch</button>
