@@ -18,3 +18,10 @@ declare class CartItem {
 	id: string
 	quantity: number
 }
+
+declare class GalleryItem{
+	id:string
+	name:string
+	author:string
+	link:string
+}
