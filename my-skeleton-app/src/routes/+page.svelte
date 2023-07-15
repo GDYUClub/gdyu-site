@@ -3,7 +3,7 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import GalleryCard from '$lib/galleryCard.svelte';
 	import { element } from 'svelte/internal';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 
 	export const clubProjects = [
 		{
@@ -25,44 +25,33 @@
 			link: 'https://yoush.itch.io/mts'
 		}
 	];
-	let videoElement: HTMLVideoElement;
-	let vidOrder: GalleryItem[] = [];
-	let vidSrc = '';
-	function playNewVid() {
-		console.log(vidOrder);
-		if (vidOrder.length == 0) {
-			vidOrder = [];
 
-			clubProjects.forEach((element) => vidOrder.push(element));
-			console.log(vidOrder);
+	let intervalId: NodeJS.Timeout;
+	let gifSrc: string = '';
+	let gifOrder: GalleryItem[] = [];
+	function swapGif() {
+		if (gifOrder.length == 0) {
+			gifOrder = [];
 
-			for (var i = vidOrder.length - 1; i > 0; i--) {
+			clubProjects.forEach((element) => gifOrder.push(element));
+
+			for (var i = gifOrder.length - 1; i > 0; i--) {
 				var j = Math.floor(Math.random() * (i + 1));
-				var temp = vidOrder[i];
-				vidOrder[i] = vidOrder[j];
-				vidOrder[j] = temp;
+				var temp = gifOrder[i];
+				gifOrder[i] = gifOrder[j];
+				gifOrder[j] = temp;
 			}
 		}
 
-		vidSrc = 'assets/projects/demos/{id}.mp4'.replace('{id}', vidOrder.pop().id);
-		console.log(vidSrc);
-		console.log(videoElement);
-		playCurrentVideo();
+		gifSrc = 'assets/projects/gifs/{id}.gif'.replace('{id}', gifOrder.pop().id);
 	}
-	playNewVid();
 
 	onMount(() => {
-		playCurrentVideo();
+		intervalId = setInterval(swapGif, 5000);
 	});
-
-	function playCurrentVideo() {
-		if (videoElement) {
-			videoElement.src = vidSrc;
-			videoElement.play().catch((error) => {
-				console.error('Error playing the video:', error);
-			});
-		}
-	}
+	onDestroy(() => {
+		clearInterval(intervalId);
+	});
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center">
@@ -79,7 +68,7 @@
 				class="  w-full min-w-[20px] max-w-xl z-10 absolute"
 			/>
 			<img
-				src="assets/rei-real.png"
+				src={gifSrc}
 				alt="background gameplay"
 				class="w-full min-w-[20px] max-w-xl z-0 relative"
 			/>
