@@ -3,7 +3,7 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import GalleryCard from '$lib/galleryCard.svelte';
 	import { element } from 'svelte/internal';
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 
 	export const clubProjects = [
 		{
@@ -25,33 +25,44 @@
 			link: 'https://yoush.itch.io/mts'
 		}
 	];
+	let videoElement: HTMLVideoElement;
+	let vidOrder: GalleryItem[] = [];
+	let vidSrc = '';
+	function playNewVid() {
+		console.log(vidOrder);
+		if (vidOrder.length == 0) {
+			vidOrder = [];
 
-	let intervalId: NodeJS.Timeout;
-	let gifSrc: string = '';
-	let gifOrder: GalleryItem[] = [];
-	function swapGif() {
-		if (gifOrder.length == 0) {
-			gifOrder = [];
+			clubProjects.forEach((element) => vidOrder.push(element));
+			console.log(vidOrder);
 
-			clubProjects.forEach((element) => gifOrder.push(element));
-
-			for (var i = gifOrder.length - 1; i > 0; i--) {
+			for (var i = vidOrder.length - 1; i > 0; i--) {
 				var j = Math.floor(Math.random() * (i + 1));
-				var temp = gifOrder[i];
-				gifOrder[i] = gifOrder[j];
-				gifOrder[j] = temp;
+				var temp = vidOrder[i];
+				vidOrder[i] = vidOrder[j];
+				vidOrder[j] = temp;
 			}
 		}
 
-		gifSrc = 'assets/projects/gifs/{id}.gif'.replace('{id}', gifOrder.pop().id);
+		vidSrc = 'assets/projects/demos/{id}.mp4'.replace('{id}', vidOrder.pop().id);
+		console.log(vidSrc);
+		console.log(videoElement);
+		playCurrentVideo();
 	}
+	playNewVid();
 
 	onMount(() => {
-		intervalId = setInterval(swapGif, 5000);
+		playCurrentVideo();
 	});
-	onDestroy(() => {
-		clearInterval(intervalId);
-	});
+
+	function playCurrentVideo() {
+		if (videoElement) {
+			videoElement.src = vidSrc;
+			videoElement.play().catch((error) => {
+				console.error('Error playing the video:', error);
+			});
+		}
+	}
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center">
@@ -68,19 +79,17 @@
 				class="  w-full min-w-[20px] max-w-xl z-10 absolute"
 			/>
 			<img
-				src={gifSrc}
+				src="assets/backdrop.png"
 				alt="background gameplay"
-				class="w-full min-w-[20px] max-w-xl z-0 relative"
+				class="w-full min-w-[20px] max-w-xl z-0 absolute"
 			/>
-			<!--
 			<video
 				src={vidSrc}
 				autoplay="true"
 				bind:this={videoElement}
-				class="w-full min-w-[20px] max-w-xl z-0 relative"
+				class="w-full min-w-[20px] max-w-xl z-1 relative"
 				on:ended={playNewVid}
 			/>
-			-->
 		</div>
 	</div>
 	<h1 class="h1 text-center pt-20">The Game Development Community</h1>

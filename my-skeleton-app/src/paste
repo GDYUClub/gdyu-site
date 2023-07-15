@@ -41,3 +41,42 @@
 		</AccordionItem>
 		<!-- ... -->
 	</Accordion>
+
+	let videoElement: HTMLVideoElement;
+	let vidOrder: GalleryItem[] = [];
+	let vidSrc = '';
+	function playNewVid() {
+		console.log(vidOrder);
+		if (vidOrder.length == 0) {
+			vidOrder = [];
+
+			clubProjects.forEach((element) => vidOrder.push(element));
+			console.log(vidOrder);
+
+			for (var i = vidOrder.length - 1; i > 0; i--) {
+				var j = Math.floor(Math.random() * (i + 1));
+				var temp = vidOrder[i];
+				vidOrder[i] = vidOrder[j];
+				vidOrder[j] = temp;
+			}
+		}
+
+		vidSrc = 'assets/projects/demos/{id}.mp4'.replace('{id}', vidOrder.pop().id);
+		console.log(vidSrc);
+		console.log(videoElement);
+		playCurrentVideo();
+	}
+	playNewVid();
+
+	onMount(() => {
+		playCurrentVideo();
+	});
+
+	function playCurrentVideo() {
+		if (videoElement) {
+			videoElement.src = vidSrc;
+			videoElement.play().catch((error) => {
+				console.error('Error playing the video:', error);
+			});
+		}
+	}
