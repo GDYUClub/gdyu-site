@@ -28,6 +28,7 @@
 	let videoElement: HTMLVideoElement;
 	let vidOrder: GalleryItem[] = [];
 	let vidSrc = '';
+	/*
 	function playNewVid() {
 		console.log(vidOrder);
 		if (vidOrder.length == 0) {
@@ -63,6 +64,12 @@
 			});
 		}
 	}
+	*/
+	function restartVid() {
+		videoElement.src = 'assets/projects/demos/mts.mp4';
+		videoElement.currentTime = 0;
+		videoElement.play();
+	}
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center">
@@ -84,11 +91,11 @@
 				class="w-full min-w-[20px] max-w-xl z-0 absolute"
 			/>
 			<video
-				src={vidSrc}
+				src="assets/projects/demos/mts.mp4"
 				autoplay="true"
 				bind:this={videoElement}
 				class="w-full min-w-[20px] max-w-xl z-1 relative"
-				on:ended={playNewVid}
+				on:ended={restartVid}
 			/>
 		</div>
 	</div>
@@ -99,42 +106,67 @@
 		<Accordion>
 			<AccordionItem open>
 				<svelte:fragment slot="lead"><img src="assets/shib.png" alt="" /></svelte:fragment>
-				<svelte:fragment slot="summary">GDYU Lore</svelte:fragment>
-				<svelte:fragment slot="content"
-					>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-					has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-					took a galley of type and scrambled it to make a type specimen book. It has survived not
-					only five centuries, but also the leap into electronic typesetting, remaining essentially
-					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum.</svelte:fragment
-				>
+				<svelte:fragment slot="summary">GDYU Lore:</svelte:fragment>
+				<svelte:fragment slot="content">
+					<ul class="list">
+						<li>
+							GDYU or "Game Devs @ YorkU" Was founded in november 2021 by (me), Jayden Brooks,
+							during my first year at York University. York still hadn't returned to campus for the
+							fall '21 semester, and I was looking for opportunities to make friends. I looked for a
+							game development club as it was a major hobby of mine in high school and I love
+							talking about video games, but quickly realized one didn't exist!
+						</li>
+						<li>
+							so I decided to take the initiative and make the club myself. All clubs were created
+							by students at some point right? Despite knowing nothing about the york club
+							application/management process, I made a discord server calling us an "unofficial
+							club", and advertised it in existing clubs.
+						</li>
+						<li>
+							Shockingly, people showed up! Enough for us to apply to be a real club, and in January
+							of 2022, our application was approved! GDYU was real!
+						</li>
+					</ul>
+				</svelte:fragment>
 			</AccordionItem>
 			<AccordionItem>
 				<svelte:fragment slot="lead"><img src="assets/beeg.png" alt="" /></svelte:fragment>
-				<svelte:fragment slot="summary">What are we up to</svelte:fragment>
-				<svelte:fragment slot="content"
-					>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-					has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-					took a galley of type and scrambled it to make a type specimen book. It has survived not
-					only five centuries, but also the leap into electronic typesetting, remaining essentially
-					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum.</svelte:fragment
-				>
+				<svelte:fragment slot="summary">What we're up to:</svelte:fragment>
+				<svelte:fragment slot="content">
+					<ul class="list">
+						<li>
+							Today, we're doing much better than I could have ever imagined. Not only do we have a
+							large online community, but we also have an in-person presence in the Lassonde
+							community at york (we got a hecking office!). We host in-person and online community
+							events and workshops, a Video game book club, our Tri-Annual Game Jam: Yudum-Dare, and
+							an upcoming line of merchandise (the primary motivation to make this site lol)
+						</li>
+						<li>
+							our most recent and most ambitious endevour has definetly been collaborating with game
+							development clubs from other ontario universities and try to hold some massive
+							collaborative events (the Game-dev-club Multiverse, we call it that because we are ALL
+							nerds.)
+						</li>
+					</ul>
+				</svelte:fragment>
 			</AccordionItem>
 			<AccordionItem>
 				<svelte:fragment slot="lead"><img src="assets/fax.png" alt="" /></svelte:fragment>
-				<svelte:fragment slot="summary">How to get involved</svelte:fragment>
-				<svelte:fragment slot="content"
-					>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-					has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-					took a galley of type and scrambled it to make a type specimen book. It has survived not
-					only five centuries, but also the leap into electronic typesetting, remaining essentially
-					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum.</svelte:fragment
-				>
+				<svelte:fragment slot="summary">How to get involved:</svelte:fragment>
+				<svelte:fragment slot="content">
+					<ul class="list">
+						<li>
+							The easiest way to get involved with GDYU is to join the club! (The link to our
+							campuslabs page is at the bottom of the site)
+						</li>
+						<li>
+							If you're looking to help run the club, then we're recruiting a whole lot more
+							executive members for the fall 23 year, and you should definitely apply to a role you
+							think you'd be good at (we have a lot of positions, and we'll talk about it in more
+							detail when the time is closer)
+						</li>
+					</ul>
+				</svelte:fragment>
 			</AccordionItem>
 			<!-- ... -->
 		</Accordion>
@@ -150,6 +182,7 @@
 	<section>
 		<div class="mb-20 flex-row justify-center items-center">
 			<button class=" mt-20 btn variant-filled">Merch (coming soon)</button>
+			<button class="btn variant-filled">Join the club!</button>
 			<button class="btn variant-filled">Contact Us</button>
 			<br />
 			<br />

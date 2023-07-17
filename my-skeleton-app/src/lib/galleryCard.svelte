@@ -10,7 +10,10 @@
 	}
 </script>
 
-<div class="relative group">
+<div
+	class=" hover:cursor-pointer relative group"
+	on:click={(window.location.href = galleryItem.link)}
+>
 	<img
 		class="h-auto max-w-full rounded-lg hover:brightness-75 transition-all duration-500"
 		on:mouseover={handleHover}
