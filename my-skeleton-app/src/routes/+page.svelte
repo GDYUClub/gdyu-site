@@ -13,16 +13,22 @@
 			link: 'https://yoush.itch.io/mts'
 		},
 		{
-			id: 'mts',
-			name: 'Mail Toss Scallywag',
-			author: 'Jayden "Yoush" Brooks',
-			link: 'https://yoush.itch.io/mts'
+			id: 'xmode',
+			name: 'X-Mode',
+			author: 'xzippyzachx',
+			link: 'https://store.steampowered.com/app/2265640/XMODE/'
 		},
 		{
-			id: 'mts',
-			name: 'Mail Toss Scallywag',
+			id: 'baw',
+			name: 'Baba is WAR',
 			author: 'Jayden "Yoush" Brooks',
-			link: 'https://yoush.itch.io/mts'
+			link: 'https://yoush.itch.io/yudum1'
+		},
+		{
+			id: 'pdp',
+			name: 'pdp-rpg (wip)',
+			author: 'Jayden "Yoush" Brooks',
+			link: 'https://yoush.itch.io/pdp-rpg'
 		}
 	];
 	let videoElement: HTMLVideoElement;
@@ -66,7 +72,7 @@
 	}
 	*/
 	function restartVid() {
-		videoElement.src = 'assets/projects/demos/mts.mp4';
+		//videoElement.src = 'assets/projects/demos/xmode.mp4';
 		videoElement.currentTime = 0;
 		videoElement.play();
 	}
@@ -81,7 +87,7 @@
 			<!--
 			-->
 			<img
-				src="assets/logo-small.png"
+				src="assets/logo-new.png"
 				alt="club logo"
 				class="  w-full min-w-[20px] max-w-xl z-10 absolute"
 			/>
@@ -91,7 +97,7 @@
 				class="w-full min-w-[20px] max-w-xl z-0 absolute"
 			/>
 			<video
-				src="assets/projects/demos/mts.mp4"
+				src="assets/projects/demos/xmode.mp4"
 				autoplay="true"
 				bind:this={videoElement}
 				class="w-full min-w-[20px] max-w-xl z-1 relative"
@@ -171,7 +177,7 @@
 			<!-- ... -->
 		</Accordion>
 	</div>
-	<h1 class="h1 text-center pt-20">Our Projects:</h1>
+	<h1 class="h1 text-center pt-20">Some projects made by our club members:</h1>
 	<div class="max-w-3xl gallery">
 		<section class="mt-20 grid grid-cols-2 md:grid-cols-3 gap-1">
 			{#each clubProjects as project}
@@ -190,3 +196,8 @@
 		</div>
 	</section>
 </div>
+<footer>
+	<div class="flex justify-center items-center h-10 bg-[#19032b] w-screen">
+		Made with 🕹️ from the GDYU Team
+	</div>
+</footer>

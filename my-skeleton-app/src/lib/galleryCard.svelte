@@ -12,7 +12,7 @@
 
 <div
 	class=" hover:cursor-pointer relative group"
-	on:click={(window.location.href = galleryItem.link)}
+	on:click={window.open(galleryItem.link, '_blank')}
 >
 	<img
 		class="h-auto max-w-full rounded-lg hover:brightness-75 transition-all duration-500"
@@ -27,8 +27,7 @@
 		class="pointer-events-none opacity-0 absolute top-1.5 left-1.5 flex justify-center items-center text-center flex-col-reverse group-hover:brightness-100 group-hover:opacity-100"
 	>
 		<div class="pointer-events-none">
-			<p>{galleryItem.name}</p>
-			<p>{galleryItem.author}</p>
+			<p class="drop-shadow-md">{galleryItem.name}</p>
 		</div>
 	</div>
 </div>
