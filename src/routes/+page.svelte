@@ -205,8 +205,8 @@
 	</div>
 	<section>
 		<div class="mb-40 flex-row justify-center items-center">
-			<a href="https://discord.gg/9euWNWv8nq" target="_blank" class="btn variant-filled mt-20"
-				>Join the Discord</a
+			<a href="https://yorku.campuslabs.ca/engage/organization/gdyuclub" target="_blank" class="btn variant-filled mt-20"
+				>Join the Community!</a
 			>
 			<a href="/store" target="_blank" class="btn variant-filled mt-20">Merch (coming soon)</a>
 			<a
