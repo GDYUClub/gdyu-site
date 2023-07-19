@@ -163,13 +163,13 @@
 							large online community, but we also have an in-person presence in the Lassonde
 							community at york (we got a hecking office!). We host in-person and online community
 							events and workshops, a Video game book club, our Tri-Annual Game Jam: Yudum-Dare, and
-							an upcoming line of merchandise (the primary motivation to make this site lol)
+							an upcoming line of merchandise (the primary motivation to make this site 😳).
 						</li>
 						<li>
 							our most recent and most ambitious endevour has definetly been collaborating with game
 							development clubs from other ontario universities and try to hold some massive
-							collaborative events (the Game-dev-club Multiverse, we call it that because we are ALL
-							nerds.)
+							collaborative events (The Game-dev-club Multiverse as we call it, because unsurprisingly we are ALL
+							nerds.).
 						</li>
 					</ul>
 				</svelte:fragment>
