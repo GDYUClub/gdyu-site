@@ -1,0 +1,7 @@
+{
+	"/": [],
+	"/api/stripeCheckout": [
+		"src/routes/api/stripeCheckout/+server.ts"
+	],
+	"/store": []
+}
