@@ -115,7 +115,7 @@
 				class="w-full min-w-[20px] max-w-xl z-0 absolute"
 			/>
 			<video
-				src="assets/projects/demos/xmode.mp4"
+				src="assets/projects/demos/titledemo.mp4"
 				autoplay="true"
 				bind:this={videoElement}
 				class="w-full min-w-[20px] max-w-xl z-1 relative"
