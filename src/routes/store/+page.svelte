@@ -21,6 +21,9 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
+	<h1 class="h1 text-center pt-20">I said coming soon! Come back later!</h1>
+	
+	<!--
 	<div class="grid grid-cols-3 gap-4">
 		<div class="col-span-3">
 			<h1>gdyu store</h1>
@@ -32,4 +35,6 @@
 			<button class="btn variant-filled-primary">checkout</button>
 		</div>
 	</div>
+
+	-->
 </div>
