@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let galleryItem: GalleryItem = { id: '', name: '', author: '', link: '' };
+	export let galleryItem: GalleryItem = { id: '', name: '', author: '', link: '', coverImg: '' };
 	const titlePathTemplate: string = '/assets/projects/titles/{id}.png';
 	const demoPathTemplate: string = '/assets/projects/demos/{id}.mp4';
 	const gifPathTemplate: string = '/assets/projects/gifs/{id}.gif';
@@ -8,19 +8,31 @@
 	function handleHover() {
 		isHovered = !isHovered;
 	}
+
+	function getCoverSource() {
+		if (galleryItem.coverImg == '') {
+			if (isHovered)
+				return gifPathTemplate.replace('{id}', galleryItem.id)
+			else
+				return titlePathTemplate.replace('{id}', galleryItem.id)
+		}
+		else {
+			return galleryItem.coverImg
+		}
+	}
 </script>
 
-<div
+<button
 	class=" hover:cursor-pointer relative group"
 	on:click={window.open(galleryItem.link, '_blank')}
 >
 	<img
-		class="h-auto max-w-full rounded-lg hover:brightness-75 transition-all duration-500"
+		class="h-full w-full object-cover aspect-square rounded-lg hover:brightness-75 transition-all duration-500"
+		on:focus={handleHover}
+		on:blur={handleHover}
 		on:mouseover={handleHover}
 		on:mouseout={handleHover}
-		src={isHovered
-			? gifPathTemplate.replace('{id}', galleryItem.id)
-			: titlePathTemplate.replace('{id}', galleryItem.id)}
+		src={getCoverSource()}
 		alt="a game made by a gdyu member"
 	/>
 	<div
@@ -30,4 +42,4 @@
 			<p class="drop-shadow-md">{galleryItem.name}</p>
 		</div>
 	</div>
-</div>
+</button>

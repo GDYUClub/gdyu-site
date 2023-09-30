@@ -5,48 +5,55 @@
 	import { element } from 'svelte/internal';
 	import { onMount } from 'svelte';
 
-	export const clubProjects = [
+	export let clubProjects = [
 		{
 			id: 'mts',
 			name: 'Mail Toss Scallywag',
 			author: 'Jayden "Yoush" Brooks',
-			link: 'https://yoush.itch.io/mts'
+			link: 'https://yoush.itch.io/mts',
+			coverImg: ''
 		},
 		{
 			id: 'xmode',
 			name: 'X-Mode',
 			author: 'xzippyzachx',
-			link: 'https://store.steampowered.com/app/2265640/XMODE/'
+			link: 'https://store.steampowered.com/app/2265640/XMODE/',
+			coverImg: ''
 		},
 		{
 			id: 'baw',
 			name: 'Baba is WAR',
 			author: 'Jayden "Yoush" Brooks',
-			link: 'https://yoush.itch.io/yudum1'
+			link: 'https://yoush.itch.io/yudum1',
+			coverImg: ''
 		},
 		{
 			id: 'pdp',
 			name: 'pdp-rpg (wip)',
 			author: 'Jayden "Yoush" Brooks',
-			link: 'https://yoush.itch.io/pdp-rpg'
+			link: 'https://yoush.itch.io/pdp-rpg',
+			coverImg: ''
 		},
 		{
 			id: 'n1',
 			name: 'Small FPS game',
 			author: 'Nad Labs',
-			link: 'https://nad-labs.itch.io/a-small-fps-game'
+			link: 'https://nad-labs.itch.io/a-small-fps-game',
+			coverImg: ''
 		},
 		{
 			id: 'n2',
 			name: 'Escape the Lab',
 			author: 'Nad Labs',
-			link: 'https://nad-labs.itch.io/escape-the-lab'
+			link: 'https://nad-labs.itch.io/escape-the-lab',
+			coverImg: ''
 		},
 		{
 			id: 'n3',
 			name: 'Adventures of IceDude in Absolute Zero',
 			author: 'Nad Labs',
-			link: 'https://nad-labs.itch.io/escape-the-lab'
+			link: 'https://nad-labs.itch.io/escape-the-lab',
+			coverImg: ''
 		}
 	];
 	let videoElement: HTMLVideoElement;
@@ -201,10 +208,14 @@
 			{#each clubProjects as project}
 				<GalleryCard galleryItem={project} />
 			{/each}
+
+			<a href="/projects" class="h3 hover:h1 font-bold variant-filled hover:cursor-pointer relative group flex text-center items-center justify-center rounded-lg hover:brightness-75 transition-all duration-500">
+				More Projects
+			</a>
 		</section>
 	</div>
 	<section>
-		<div class="mb-40 flex-row justify-center items-center">
+		<div class="mb-20 flex-row justify-center items-center">
 			<a href="https://yorku.campuslabs.ca/engage/organization/gdyuclub" target="_blank" class="btn variant-filled mt-20"
 				>Join the Community!</a
 			>
