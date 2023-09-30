@@ -24,4 +24,5 @@ declare class GalleryItem{
 	name:string
 	author:string
 	link:string
+	coverImg:string
 }
