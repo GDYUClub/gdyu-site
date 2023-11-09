@@ -9,7 +9,7 @@
 		},
 		{
 			id: '2',
-			name: 'sunglasses',
+			name: 'sunsdfsdfsdglasses',
 			price: 5
 		},
 		{

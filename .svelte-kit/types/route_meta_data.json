@@ -3,5 +3,9 @@
 	"/api/stripeCheckout": [
 		"src/routes/api/stripeCheckout/+server.ts"
 	],
+	"/itch-api": [
+		"src/routes/itch-api/+server.ts"
+	],
+	"/projects": [],
 	"/store": []
 }
