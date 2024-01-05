@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="w-full bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-200 via-blue-400 to-[#19032b] z-10 fixed"
+  class="w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 via-blue-400 to-yellow-500 z-10"
 >
   <div class=" mx-auto flex flex-col justify-center items-center">
     <div
@@ -19,7 +19,7 @@
     >
       <div class="flex justify-center">
         <img
-          src="assets/logo-new.png"
+          src="assets/logo.svg"
           alt="club logo"
           class="  w-full min-w-[20px] max-w-xl z-10 absolute"
         />
@@ -37,50 +37,21 @@
         />
       </div>
     </div>
-    <div class="">
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
+    <div class="h-auto flex flex-col justify-center items-center">
+      <h1 class=" mt-4 text-deep-purple-900 text-4xl text-center monofont">
+        gdyu.club
       </h1>
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
-      </h1>
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
-      </h1>
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
-      </h1>
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
-      </h1>
-      <h1 class=" mt-4 text-gray-50 text-4xl text-center monofont">
-        Game Devs @ YorkU
-      </h1>
-      <h2 class="text-gray-50 text-4xl text-center monofont">The gamers</h2>
+      <img class="w-11" src="assets/scrimblo.webp" alt="" />
+      <h2 class="text-deep-purple-900 text-3xl text-center monofont">
+        York Universities Game Development Club('s website)
+      </h2>
     </div>
-    <div>merch zine contact buttons</div>
-    <Accordion.Root class="w-3/5 sm:max-w-[70%] text-gray-50 monofont">
-      <Accordion.Item value="item-1">
-        <Accordion.Trigger>Is it accessible?</Accordion.Trigger>
-        <Accordion.Content>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </Accordion.Content>
-      </Accordion.Item>
-      <Accordion.Item value="item-2">
-        <Accordion.Trigger>Is it styled?</Accordion.Trigger>
-        <Accordion.Content>
-          Yes. It comes with default styles that matches the other components'
-          aesthetic.
-        </Accordion.Content>
-      </Accordion.Item>
-      <Accordion.Item value="item-3">
-        <Accordion.Trigger>Is it animated?</Accordion.Trigger>
-        <Accordion.Content>
-          Yes. It's animated by default, but you can disable it if you prefer.
-        </Accordion.Content>
-      </Accordion.Item>
-    </Accordion.Root>
-    <div>projects</div>
+    <div class="my-4">
+      <div class=" text-2xl monofont">About</div>
+      <div class=" text-2xl monofont">Projects</div>
+      <div class=" text-2xl monofont">Zine</div>
+      <div class=" text-2xl monofont">Merch</div>
+    </div>
   </div>
 </div>
 <footer>foot</footer>
