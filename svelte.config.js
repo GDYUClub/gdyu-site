@@ -17,9 +17,7 @@ const config = {
 		vitePreprocess({}),
 		mdsvex({
 			extensions:['.md'],
-			layout:{
-				blog: 'src/routes/zine/post.svelte'
-			}
+			
 		})
 	]
 };
