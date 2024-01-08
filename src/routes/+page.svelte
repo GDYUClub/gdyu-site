@@ -8,11 +8,10 @@
   }
   //bg-gradient-to-t from-cyan-400 via-blue-400 to-[#19032b]
   //bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-200 via-blue-400 to-[#19032b]
+  //bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 via-blue-400 to-yellow-500
 </script>
 
-<div
-  class="w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 via-blue-400 to-yellow-500 z-10"
->
+<div class="w-full z-10">
   <div class=" mx-auto flex flex-col justify-center items-center">
     <div
       class=" bg-[#19032b] flex justify-center items-center w-screen min-h-none max-h-xl static insert-0 z-10 shadow-2xl"
