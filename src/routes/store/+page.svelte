@@ -1,25 +1,6 @@
 <script lang="ts">
     import ProductCard from '../../lib/productCard.svelte';
 
-<<<<<<< Updated upstream
-	const products: Product[] = [
-		{
-			id: '1',
-			name: 'Coffee',
-			price: 5
-		},
-		{
-			id: '2',
-			name: 'sunsdfsdfsdglasses',
-			price: 5
-		},
-		{
-			id: '3',
-			name: 'Water Bottle',
-			price: 5
-		}
-	];
-=======
     const products: Product[] = [
         {
             id: '1',
@@ -37,7 +18,6 @@
             price: 5,
         },
     ];
->>>>>>> Stashed changes
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
