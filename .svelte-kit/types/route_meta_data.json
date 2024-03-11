@@ -7,5 +7,6 @@
 		"src/routes/itch-api/+server.ts"
 	],
 	"/projects": [],
-	"/store": []
+	"/store": [],
+	"/zinePages": []
 }

@@ -1,2 +1,7 @@
-node_modules
+node_modules/
+.node_modules
+.svelte-kit/
 .svelte-kit
+svelte-kit
+.svelte-kit/types/route_meta_data.json
+/.svelte-kit/types
