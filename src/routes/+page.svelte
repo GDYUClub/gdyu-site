@@ -1,56 +1,107 @@
 <script>
-  import * as Accordion from "$lib/components/ui/accordion";
-  let headerVid;
-
-  function restartVid() {
-    headerVid.currentTime = 0;
-    headerVid.play();
-  }
-  //bg-gradient-to-t from-cyan-400 via-blue-400 to-[#19032b]
-  //bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-200 via-blue-400 to-[#19032b]
-  //bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 via-blue-400 to-yellow-500
+    import ZineHeader from './header.svelte';
 </script>
 
-<div class="w-full z-10">
-  <div class=" mx-auto flex flex-col justify-center items-center">
-    <div
-      class=" bg-[#19032b] flex justify-center items-center w-screen min-h-none max-h-xl static insert-0 z-10 shadow-2xl"
-    >
-      <div class="flex justify-center">
-        <img
-          src="assets/logo.svg"
-          alt="club logo"
-          class="  w-full min-w-[20px] max-w-xl z-10 absolute"
-        />
-        <img
-          src="assets/backdrop.png"
-          alt="background gameplay"
-          class="w-full min-w-[20px] max-w-xl z-0 absolute"
-        />
-        <video
-          src="assets/projects/demos/titledemo.mp4"
-          autoplay="true"
-          bind:this={headerVid}
-          class="w-full min-w-[20px] max-w-xl z-1 relative"
-          on:ended={restartVid}
-        />
-      </div>
+<svelte:head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+</svelte:head>
+
+<body>
+    <div class="ml-auto mr-auto">
+        <!-- HEADER -->
+        <ZineHeader />
+
+        <div class="firstYellowBlock flex">
+            <div class="block w-full">
+                <!-- Lines -->
+                <!-- <div class="absolute">
+                        <div class="w-1/12 lineBlock">
+                            <div class=" leftBlock">
+                                <div class="dot" />
+                                <div class="w-1/2">
+                                    <div class="border-r-4 lineAqua" />
+                                </div>
+                                <div class="diamond-narrow" />
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="md:absolute">
+                    <!-- TITLE -->
+                    <div class="w-10/12 pt-12 text-4xl xl:text-left md:pl-4">
+                        <div class="pinkText">GAME</div>
+                        <div class="pinkTextSmaller">Dev</div>
+                        <div class="pinkTextSmaller">Design</div>
+                        <div class="pinkTextSmaller">Art</div>
+                    </div>
+                </div>
+                <div class="ml-auto mr-auto md:mt-9 md:pt-9">
+                    <!--
+                        -->
+                    <img
+                        src="assets/logo-invert.svg"
+                        alt="club logo"
+                        class="logoCol ml-auto mr-auto min-w-[20px] max-w-xl z-10"
+                    />
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="h-auto flex flex-col justify-center items-center">
-      <h1 class=" mt-4 text-deep-purple-900 text-4xl text-center monofont">
-        gdyu.club
-      </h1>
-      <img class="w-11" src="assets/scrimblo.webp" alt="" />
-      <h2 class="text-deep-purple-900 text-3xl text-center monofont">
-        York Universities Game Development Club('s website)
-      </h2>
-    </div>
-    <div class="my-4">
-      <div class=" text-2xl monofont">About</div>
-      <div class=" text-2xl monofont">Projects</div>
-      <div class=" text-2xl monofont">Zine</div>
-      <div class=" text-2xl monofont">Merch</div>
-    </div>
-  </div>
-</div>
-<footer>foot</footer>
+</body>
+
+<style>
+    .logoCol {
+        color: #120227;
+    }
+    .firstYellowBlock {
+        background-color: #f5d33d;
+        height: 810px;
+    }
+    .lineAqua {
+        border-color: #36bee1;
+        height: 693px;
+        position: absolute;
+        left: calc(5em - 10px);
+        top: 48px;
+    }
+    .lineBlock {
+    }
+    .dot {
+        height: 16px;
+        width: 16px;
+        background-color: #36bee1;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(5em - 16px);
+        top: 40px;
+    }
+    .diamond-narrow {
+        width: 16px;
+        aspect-ratio: 1;
+        position: absolute;
+        background: #36bee1;
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        left: calc(5em - 16px);
+        top: 734px;
+    }
+    .pinkText {
+        color: #ec25a0;
+        font-family: 'Archivo Black';
+        font-weight: 400;
+        font-size: 96px;
+        height: 76px;
+    }
+    .pinkTextSmaller {
+        color: #ec25a0;
+        font-family: 'Almarai';
+        font-size: 64px;
+        height: 64px;
+        font-weight: 700;
+    }
+</style>
