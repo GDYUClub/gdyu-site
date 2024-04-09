@@ -1,22 +1,33 @@
+<svelte:head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+</svelte:head>
+
 <div class="flex headerCol align-middle h-screen justify-center items-center">
-    <div class="w-1/6 ml-4 shibImage">
+    <div class="w-1/6 ml-12 shibImage">
         <img src="assets/shib.png" />
     </div>
     <div class="text-center w-4/6 flex justify-evenly">
-        <div><p class="text-xl b uppercase headerPinkText">Home</p></div>
-        <div><p class="text-xl b uppercase headerYellowText">About</p></div>
-        <div><p class="text-xl b uppercase headerYellowText">Projects</p></div>
-        <div><p class="text-xl b uppercase headerYellowText">Zine</p></div>
-        <div><p class="text-xl b uppercase headerYellowText">Store</p></div>
+        <div><a href="/" class="text-xl b uppercase headerYellowText">Home</a></div>
+        <div><a href="/about" class="text-xl b uppercase headerYellowText">About</a></div>
+        <div><a href="/projects" class="text-xl b uppercase headerYellowText">Projects</a></div>
+        <div><a href="/zine" class="text-xl b uppercase headerYellowText">Zine</a></div>
+        <div><a href="/store" class="text-xl b uppercase headerYellowText">Store</a></div>
     </div>
-    <div class=" text-right w-1/6 flex">
+    <div class="mr-12 w-1/6 flex links">
         <div class="ml-auto">
             <img
                 src="assets/discord-mark-blue.svg"
                 width="30"
             />
         </div>
-        <div class="mr-4 ml-4">
+        <div class="ml-4">
             <img
                 src="assets/insta.svg"
                 width="24px"
