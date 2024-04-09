@@ -13,13 +13,13 @@
     <div class="w-1/6 ml-12 shibImage">
         <img src="assets/shib.png" />
     </div>
-    <div class="text-center w-4/6 flex justify-evenly">
+    <nav class="text-center w-4/6 flex justify-evenly">
         <div><a href="/" class="text-xl b uppercase headerYellowText">Home</a></div>
         <div><a href="/about" class="text-xl b uppercase headerYellowText">About</a></div>
         <div><a href="/projects" class="text-xl b uppercase headerYellowText">Projects</a></div>
         <div><a href="/zine" class="text-xl b uppercase headerYellowText">Zine</a></div>
         <div><a href="/store" class="text-xl b uppercase headerYellowText">Store</a></div>
-    </div>
+    </nav>
     <div class="mr-12 w-1/6 flex links">
         <div class="ml-auto">
             <img

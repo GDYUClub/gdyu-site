@@ -1,6 +1,8 @@
 <script>
-  import "../app.postcss";
-  import "$lib/styles/main.css";
+    import Header from './header.svelte';
+    import "../app.css";
+    import "$lib/styles/main.css";
 </script>
 
-<slot />
+<Header/>
+<slot></slot>
