@@ -18,7 +18,7 @@
         <div><a href="/about" class="text-xl b uppercase headerYellowText">About</a></div>
         <div><a href="/projects" class="text-xl b uppercase headerYellowText">Projects</a></div>
         <div><a href="/zine" class="text-xl b uppercase headerYellowText">Zine</a></div>
-        <div><a href="/store" class="text-xl b uppercase headerYellowText">Store</a></div>
+        <div><a href="/merch" class="text-xl b uppercase headerYellowText">Store</a></div>
     </nav>
     <div class="mr-12 w-1/6 flex links">
         <div class="ml-auto">
