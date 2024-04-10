@@ -2,3 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------- Common CSS that is used in multiple components ------- */
+
+/* Text */
+.yellowTextBlockTop {
+    color: #F5D33D;
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 24px;
+    height: 27px;
+}
+
+/* Background colors */
+.pink {
+    border-color: #ec25a0;
+    background-color: #ec25a0;
+}
+.blue {
+    border-color: #36bee1;
+    background-color: #36bee1;
+}
+.dark {
+    border-color: #120227;
+    background-color: #120227;
+}
+.yellow {
+    border-color: #F5D33D;
+    background-color: #F5D33D;
+}
+
+/* Lines */
+.lineBlockLeft {
+    left: 5%;
+}
+.lineBlockRight {
+    right: 5%;
+}
+.lineBlockBottom {
+    bottom: 5%;
+}
+.lineV {
+    height: 693px;
+    width: 4px;
+    position: absolute;
+    top: 48px;
+    left: -2px;
+}
+.lineH {
+    height: 4px;
+    width: 300px;
+    position: absolute;
+    top: 500px;
+    left: 10%;
+}
+.dotV {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: -8px;
+}
+.diamondNarrowV {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    top: 734px;
+    left: -8px;
+}
+
+/* Other */
+.h-800 {
+    height: 800px;
+}

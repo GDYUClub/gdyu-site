@@ -14,22 +14,24 @@
         <img src="assets/shib.png" />
     </div>
     <nav class="text-center w-4/6 flex justify-evenly">
-        <div><a href="/" class="text-xl b uppercase headerYellowText">Home</a></div>
-        <div><a href="/about" class="text-xl b uppercase headerYellowText">About</a></div>
-        <div><a href="/projects" class="text-xl b uppercase headerYellowText">Projects</a></div>
-        <div><a href="/zine" class="text-xl b uppercase headerYellowText">Zine</a></div>
-        <div><a href="/merch" class="text-xl b uppercase headerYellowText">Store</a></div>
+        <div><a href="/" class="text-xl b uppercase yellowTextNav">Home</a></div>
+        <div><a href="/about" class="text-xl b uppercase yellowTextNav">About</a></div>
+        <div><a href="/projects" class="text-xl b uppercase yellowTextNav">Projects</a></div>
+        <div><a href="/zine" class="text-xl b uppercase yellowTextNav">Zine</a></div>
+        <div><a href="/merch" class="text-xl b uppercase yellowTextNav">Store</a></div>
     </nav>
     <div class="mr-12 w-1/6 flex links">
         <div class="ml-auto">
             <img
                 src="assets/discord-mark-blue.svg"
+                alt="Discord"
                 width="30"
             />
         </div>
         <div class="ml-4">
             <img
                 src="assets/insta.svg"
+                alt="Instagram"
                 width="24px"
             />
         </div>
@@ -45,13 +47,12 @@
     .shibImage {
         height: 40px;
     }
-    .discordColor {
-        color: #5865f2;
-    }
-    .headerYellowText {
-        color: #f5d33d;
-    }
-    .headerPinkText {
-        color: #ec25a0;
+
+    .yellowTextNav {
+        color: #F5D33D;
+        font-family: 'Almarai';
+        font-weight: 400;
+        font-size: 32px;
+        height: 36px;
     }
 </style>
