@@ -12,6 +12,23 @@
     font-size: 24px;
     height: 27px;
 }
+.yellowTextBlockHeader {
+    color: #F5D33D;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+.blueText {
+    color: #36bee1;
+}
+p {
+    color: #FFFFFF;
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
 
 /* Background colors */
 .pink {
@@ -39,7 +56,7 @@
     right: 5%;
 }
 .lineBlockBottom {
-    bottom: 5%;
+    left: 5%;
 }
 .lineV {
     height: 693px;
@@ -50,10 +67,10 @@
 }
 .lineH {
     height: 4px;
-    width: 300px;
+    width: 250px;
     position: absolute;
-    top: 500px;
-    left: 10%;
+    top: 950px;
+    left: 2px;
 }
 .dotV {
     height: 16px;
@@ -63,6 +80,13 @@
     top: 40px;
     left: -8px;
 }
+.dotH {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 944px;
+}
 .diamondNarrowV {
     height: 16px;
     width: 16px;
@@ -71,8 +95,19 @@
     top: 734px;
     left: -8px;
 }
+.diamondNarrowH {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    top: 944px;
+    left: 250px;
+}
 
 /* Other */
 .h-800 {
     height: 800px;
+}
+.h-1000 {
+    height: 1000px;
 }

@@ -23,7 +23,7 @@
 
         <div class="md:absolute">
             <!-- TITLE -->
-            <div class="w-10/12 pt-12 pl-32 text-4xl xl:text-left">
+            <div class="w-10/12 pt-12 md:ml-32 m-auto text-4xl">
                 <div class="pinkTextHero">GAME</div>
                 <div class="pinkTextSmallerHero">DEV</div>
                 <div class="pinkTextSmallerHero">DESIGN</div>
@@ -31,9 +31,9 @@
             </div>
         </div>
         
-        <div class="ml-auto mr-auto md:mt-9 md:pt-9">
+        <div class="m-auto">
             <video
-                class="video ml-auto mr-auto min-w-[20px] max-w-xl"
+                class="video m-auto"
                 src="assets/projects/demos/titledemo.mp4"
                 autoplay
                 muted

@@ -11,7 +11,7 @@
 
 <div class="flex headerCol align-middle h-screen justify-center items-center">
     <div class="w-1/6 ml-12 shibImage">
-        <img src="assets/shib.png" />
+        <img src="assets/shib.png" alt=""/>
     </div>
     <nav class="text-center w-4/6 flex justify-evenly">
         <div><a href="/" class="text-xl b uppercase yellowTextNav">Home</a></div>
