@@ -1,8 +1,8 @@
 <div class="flex yellow w-full">
     <div class="flex flex-col w-1/12">
-        <div class="blue dot mx-auto mt-10 flex-none"/>
+        <div class="blue dot mx-auto -mb-1 mt-10"/>
         <div class="blue w-1 mx-auto grow"/>
-        <div class="blue diamond mx-auto -mt-1 mb-10 flex-none"/>
+        <div class="blue diamond mx-auto -mt-1 mb-10"/>
     </div>
 
     <div class="xl:absolute">
@@ -26,9 +26,9 @@
     </div>
 
     <div class="flex flex-col w-1/12">
-        <div class="pink dot mx-auto mt-10 flex-none"/>
+        <div class="pink dot mx-auto -mb-1 mt-10"/>
         <div class="pink w-1 mx-auto grow"/>
-        <div class="pink diamond mx-auto -mt-1 mb-10 flex-none"/>
+        <div class="pink diamond mx-auto -mt-1 mb-10"/>
     </div>
 </div>
 
