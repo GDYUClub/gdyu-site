@@ -4,14 +4,16 @@ let isHovered = false
 </script>
 
 <div on:mouseenter={()=> isHovered = true} on:mouseleave={()=> isHovered = false} >
-    <img class="transition ease-in-out filter hover:grayscale" src={project.coverImg} alt={project.name}>
+    <img class={isHovered ? 'gray':'nothing'} src={project.coverImg} alt={project.name}>
     <p class={isHovered ? 'visible':'hidden'}
     >{project.name} <br> by: {project.author}</p>
 </div>
 
 <style>
    div img {
-    width:350px;
+    min-width:75px;
+    width:20vw;
+    max-width: 350px;
     border-left: 7px solid;
     border-color: #F5D33D;
     border-radius: 5px;
@@ -21,11 +23,13 @@ let isHovered = false
    div p{
     visibility: hidden;
     position:relative;
-    top: -15rem;
-    margin-bottom: -15rem;
+    top: -15%;
+    margin-bottom: -15%;
     text-align: center;
-    width: 350px;
-    font-size: 2rem;
+    min-width:75px;
+    width:20vw;
+    max-width: 350px;
+    font-size: 80%;
     text-shadow:black 2px 2px;
    }
    .hidden{
@@ -33,6 +37,9 @@ let isHovered = false
    }
    .visible{
     visibility: visible;
+   }
+   .gray{
+    filter:grayscale(1)
    }
 
 </style>
