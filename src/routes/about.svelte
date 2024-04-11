@@ -30,14 +30,14 @@
 
         <div class="flex flex-col w-1/12">
             <div class="pink dot mx-auto -mb-1"/>
-            <div class="pink w-1 mx-auto grow"/>
+            <div class="pink w-0.5 mx-auto grow"/>
             <div class="pink diamond mx-auto -mt-1"/>
         </div>
     </div>
 
     <div class="flex w-1/6 h-20">
         <div class="pink dot my-auto -mr-1 ml-10"/>
-        <div class="pink h-1 my-auto grow"/>
+        <div class="pink h-0.5 my-auto grow"/>
         <div class="pink diamond my-auto -ml-1"/>
     </div>
 </div>

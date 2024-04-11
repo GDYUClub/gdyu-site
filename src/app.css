@@ -50,13 +50,13 @@ p {
 
 /* Lines */
 .dot {
-    height: 16px;
-    width: 16px;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
 }
 .diamond {
-    height: 16px;
-    width: 16px;
+    height: 8px;
+    width: 8px;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
