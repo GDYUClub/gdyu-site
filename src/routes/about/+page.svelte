@@ -1,8 +1,11 @@
 <script>
-  import * as Accordion from "$lib/components/ui/accordion";
+  // import * as Accordion from "$lib/components/ui/accordion";
+  import About from '.././about.svelte';
 </script>
 
-<Accordion.Root class="w-3/5 sm:max-w-[70%] monofont">
+<About/>
+
+<!-- <Accordion.Root class="w-3/5 sm:max-w-[70%] monofont">
   <Accordion.Item value="item-1">
     <Accordion.Trigger>Is it accessible?</Accordion.Trigger>
     <Accordion.Content>
@@ -22,4 +25,4 @@
       Yes. It's animated by default, but you can disable it if you prefer.
     </Accordion.Content>
   </Accordion.Item>
-</Accordion.Root>
+</Accordion.Root> -->
