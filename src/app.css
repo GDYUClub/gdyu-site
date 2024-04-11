@@ -10,14 +10,13 @@
     font-family: 'Almarai';
     font-weight: 400;
     font-size: 24px;
-    height: 27px;
 }
 .yellowTextBlockHeader {
     color: #F5D33D;
     font-family: 'Almarai';
     font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: calc(32px + 1.5vw);
+    line-height: calc(32px + 1.5vw);
 }
 .blueText {
     color: #36bee1;
@@ -49,65 +48,15 @@ p {
 }
 
 /* Lines */
-.lineBlockLeft {
-    left: 5%;
-}
-.lineBlockRight {
-    right: 5%;
-}
-.lineBlockBottom {
-    left: 5%;
-}
-.lineV {
-    height: 693px;
-    width: 4px;
-    position: absolute;
-    top: 48px;
-    left: -2px;
-}
-.lineH {
-    height: 4px;
-    width: 250px;
-    position: absolute;
-    top: 950px;
-    left: 2px;
-}
-.dotV {
+.dot {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    position: absolute;
-    top: 40px;
-    left: -8px;
 }
-.dotH {
+.diamond {
     height: 16px;
     width: 16px;
-    border-radius: 50%;
-    position: absolute;
-    top: 944px;
-}
-.diamondNarrowV {
-    height: 16px;
-    width: 16px;
-    position: absolute;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    top: 734px;
-    left: -8px;
-}
-.diamondNarrowH {
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    top: 944px;
-    left: 250px;
 }
 
 /* Other */
-.h-800 {
-    height: 800px;
-}
-.h-1000 {
-    height: 1000px;
-}

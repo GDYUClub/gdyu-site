@@ -9,50 +9,43 @@
     />
 </svelte:head>
 
-<div class="flex headerCol align-middle h-screen justify-center items-center">
-    <div class="w-1/6 ml-12 shibImage">
-        <img src="assets/shib.png" alt=""/>
+<div class="flex dark align-middle h-auto">
+    <div class="flex w-1/6 h-16 justify-center">
+        <img src="assets/shib.png" alt="" class="my-auto h-3/4"/>
     </div>
-    <nav class="text-center w-4/6 flex justify-evenly">
-        <div><a href="/" class="text-xl b uppercase yellowTextNav">Home</a></div>
-        <div><a href="/about" class="text-xl b uppercase yellowTextNav">About</a></div>
-        <div><a href="/projects" class="text-xl b uppercase yellowTextNav">Projects</a></div>
-        <div><a href="/zine" class="text-xl b uppercase yellowTextNav">Zine</a></div>
-        <div><a href="/merch" class="text-xl b uppercase yellowTextNav">Store</a></div>
+    <nav class="lg:flex w-4/6 h-full justify-evenly my-auto text-center">
+        <a href="/">
+            <div class="yellowTextNav">HOME</div>
+        </a>
+        <a href="/about">
+            <div class="yellowTextNav">ABOUT</div>
+        </a>
+        <a href="/projects">
+            <div class="yellowTextNav">PROJECTS</div>
+        </a>
+        <a href="/zine">
+            <div class="yellowTextNav">ZINE</div>
+        </a>
+        <a href="/store">
+            <div class="yellowTextNav">STORE</div>
+        </a>
     </nav>
-    <div class="mr-12 w-1/6 flex links">
-        <div class="ml-auto">
-            <img
-                src="assets/discord-mark-blue.svg"
-                alt="Discord"
-                width="30"
-            />
+    <div class="flex w-1/6 h-16 justify-center">
+        <div class="h-full px-2 flex">
+            <img src="assets/discord-mark-blue.svg" alt="Discord" class="my-auto h-3/4"/>
         </div>
-        <div class="ml-4">
-            <img
-                src="assets/insta.svg"
-                alt="Instagram"
-                width="24px"
-            />
+        <div class="h-full px-2 flex">
+            <img src="assets/insta.svg" alt="Instagram" class=" my-auto h-3/4"/>
         </div>
     </div>
 </div>
 
 <style>
-    .headerCol {
-        color: '#120227';
-        background-color: #120227;
-        height: 60px;
-    }
-    .shibImage {
-        height: 40px;
-    }
 
     .yellowTextNav {
         color: #F5D33D;
         font-family: 'Almarai';
-        font-weight: 400;
+        font-weight: 500;
         font-size: 32px;
-        height: 36px;
     }
 </style>
