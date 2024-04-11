@@ -31,7 +31,8 @@
                     <div class="diamondNarrowV pink" />
                 </div>
             </div>
-        </div>
+      </div>
+
 
         <div class="lg:ml-48 ml-10 lg:mr-36 mr-10 mt-28">
             <!-- TITLE -->
@@ -39,7 +40,7 @@
                 PROJECTS MADE BY OUR CLUB MEMBERS
             </div>
             <!-- PROJECT CARDS -->
-            <div class="flex gap-4">
+            <div class="py-5 flex gap-4 flex-wrap">
              {#each clubProjects as project }
               <ProjectCard project={project} />
              {/each}
