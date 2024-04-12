@@ -25,20 +25,20 @@
         </div>
     </div>
     {#key $page.url.pathname} <!-- Force re-render-->
-    <nav class="lg:flex lg:w-4/6 w-2/4 h-full justify-evenly my-auto text-center">
-        <a href="/">
+    <nav class="lg:flex lg:w-4/6 w-2/4 h-full gap-4 my-auto text-center">
+        <a href="/" class="w-1/5">
             <div class="textNav {navColor('/')}">HOME</div>
         </a>
-        <a href="/about">
+        <a href="/about" class="w-1/5">
             <div class="textNav {navColor('/about')}">ABOUT</div>
         </a>
-        <a href="/projects">
+        <a href="/projects" class="w-1/5">
             <div class="textNav {navColor('/projects')}">PROJECTS</div>
         </a>
-        <a href="/zine">
+        <a href="/zine" class="w-1/5">
             <div class="textNav {navColor('/zine')}">ZINE</div>
         </a>
-        <a href="/store">
+        <a href="/store" class="w-1/5">
             <div class="textNav {navColor('/store')}">STORE</div>
         </a>
     </nav>
@@ -63,5 +63,8 @@
         font-family: 'Almarai';
         font-weight: 500;
         font-size: 32px;
+    }
+    .textNav:hover {
+        font-weight: 800;
     }
 </style>
