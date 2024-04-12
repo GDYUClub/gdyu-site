@@ -11,11 +11,17 @@
     font-size: 18px;
     line-height: 18px;
 }
+.blockHeaderTextLG {
+    font-family: 'Archivo Black';
+    font-weight: 400;
+    font-size: calc(24px + 4vw);
+    line-height: calc(24px + 4vw);
+}
 .blockHeaderText {
     font-family: 'Almarai';
     font-weight: 700;
-    font-size: calc(32px + 1.5vw);
-    line-height: calc(32px + 1.5vw);
+    font-size: calc(28px + 1.5vw);
+    line-height: calc(28px + 1.5vw);
 }
 .pinkText {
     color: #ec25a0;
