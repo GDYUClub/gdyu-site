@@ -45,8 +45,8 @@
         color: #ec25a0;
         font-family: 'Almarai';
         font-weight: 700;
-        font-size: calc(32px + 4vw);
-        line-height: calc(32px + 4vw);
+        font-size: calc(28px + 4vw);
+        line-height: calc(28px + 4vw);
     }
 
     .video {

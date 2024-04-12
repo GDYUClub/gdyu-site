@@ -1,7 +1,7 @@
 <div class="dark w-full">
 
     <div class="flex h-20 ml-10">
-        <div class="yellowTextBlockTop my-auto">ABOUT</div>
+        <div class="yellowText blockTopText my-auto">ABOUT</div>
     </div>
 
     <div class="flex">
@@ -10,7 +10,7 @@
         </div>
 
         <div class="w-10/12">
-            <div class="yellowTextBlockHeader">
+            <div class="yellowText blockHeaderText">
                 THE GAME DEVELOPMENT COMMUNITY AT YORK UNIVERSITY
             </div>
 

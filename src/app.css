@@ -5,22 +5,29 @@
 /* ------- Common CSS that is used in multiple components ------- */
 
 /* Text */
-.yellowTextBlockTop {
-    color: #F5D33D;
+.blockTopText {
     font-family: 'Almarai';
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
 }
-.yellowTextBlockHeader {
-    color: #F5D33D;
+.blockHeaderText {
     font-family: 'Almarai';
     font-weight: 700;
     font-size: calc(32px + 1.5vw);
     line-height: calc(32px + 1.5vw);
 }
+.pinkText {
+    color: #ec25a0;
+}
 .blueText {
     color: #36bee1;
+}
+.darkText {
+    color: #120227;
+}
+.yellowText {
+    color: #F5D33D;
 }
 p {
     color: #FFFFFF;
