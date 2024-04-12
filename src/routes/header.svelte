@@ -1,7 +1,6 @@
 <script>
     import { page } from '$app/stores';
     function navColor (route) {
-        console.log($page.url.pathname);
         return $page.url.pathname == route ? 'pinkText' : 'yellowText'
     }
 </script>
