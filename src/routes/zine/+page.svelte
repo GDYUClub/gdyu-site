@@ -1,6 +1,7 @@
-<!-- <script>
-  export let data;
-</script> -->
+<script>
+  // export let data;
+  import FlashAbout from './flashAbout.svelte';
+</script>
 
 <div class="yellow">
   <div class="flex yellow w-full">
@@ -41,6 +42,8 @@
     </div>
   </div>
 </div>
+
+<FlashAbout/>
 
 <!-- <body>
   <div class="w-full titleText justify-center items-center">
