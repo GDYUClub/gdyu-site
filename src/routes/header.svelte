@@ -1,7 +1,27 @@
 <script>
     import { page } from '$app/stores';
-    function navColor (route) {
-        return $page.url.pathname == route ? 'pinkText' : 'yellowText'
+    function navTextColor (route) {
+        let unselectedText = 'yellowText'
+        if ($page.url.pathname.startsWith('/zine/'))
+        {
+            unselectedText = 'darkText'
+            if (route == '/zine')
+            {
+                route = $page.url.pathname
+            }
+        }
+
+        return $page.url.pathname == route ? 'pinkText' : unselectedText
+    }
+
+    function navColor () {
+        let color = 'dark'
+        if ($page.url.pathname.startsWith('/zine/'))
+        {
+            color = 'yellow'
+        }
+
+        return color
     }
 </script>
 
@@ -20,7 +40,8 @@
     />
 </svelte:head>
 
-<div class="flex dark align-middle h-auto">
+{#key $page.url.pathname} <!-- Force re-render-->
+<div class="flex {navColor()} align-middle h-auto">
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-evenly">
         <div class="h-full px-2 flex">
             <img src="/assets/shib.png" alt="" class="my-auto lg:h-3/5 h-4/5 object-contain"/>
@@ -28,25 +49,25 @@
         <div class="h-full px-2 w-16">
         </div>
     </div>
-    {#key $page.url.pathname} <!-- Force re-render-->
+    
     <nav class="lg:flex lg:w-4/6 w-2/4 h-full gap-4 my-auto text-center">
         <a href="/" class="w-1/5">
-            <div class="textNav {navColor('/')}">HOME</div>
+            <div class="textNav {navTextColor('/')}">HOME</div>
         </a>
         <a href="/about" class="w-1/5">
-            <div class="textNav {navColor('/about')}">ABOUT</div>
+            <div class="textNav {navTextColor('/about')}">ABOUT</div>
         </a>
         <a href="/projects" class="w-1/5">
-            <div class="textNav {navColor('/projects')}">PROJECTS</div>
+            <div class="textNav {navTextColor('/projects')}">PROJECTS</div>
         </a>
         <a href="/zine" class="w-1/5">
-            <div class="textNav {navColor('/zine')}">ZINE</div>
+            <div class="textNav {navTextColor('/zine')}">ZINE</div>
         </a>
         <a href="/store" class="w-1/5">
-            <div class="textNav {navColor('/store')}">STORE</div>
+            <div class="textNav {navTextColor('/store')}">STORE</div>
         </a>
     </nav>
-    {/key}
+    
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-center">
         <div class="h-full px-2 flex">
             <a href="https://discord.gg/bb9DqYbeMb" target="_blank" class="my-auto lg:h-3/5 h-4/5">
@@ -60,7 +81,7 @@
         </div>
     </div>
 </div>
-
+{/key}
 <style>
 
     .textNav {
