@@ -45,7 +45,7 @@
 <style>
     .aboutImg {
         aspect-ratio: 2/1;
-        background: url('assets/GDYU_tabling_fall_2023.png');
+        background: url('/assets/GDYU_tabling_fall_2023.png');
         background-color: #F5D33D;
         background-position: 50% 50%;
         background-size: 110%;
