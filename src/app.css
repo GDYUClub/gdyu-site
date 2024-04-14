@@ -35,6 +35,31 @@
 .yellowText {
     color: #F5D33D;
 }
+article h1 {
+    color: #F5D33D;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: calc(28px + 1.5vw);
+    line-height: calc(28px + 1.5vw);
+}
+article h2 {
+    color: #ec25a0;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+article p {
+    color: #FFFFFF;
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 24px;
+}
 p {
     color: #FFFFFF;
     font-family: 'Almarai';

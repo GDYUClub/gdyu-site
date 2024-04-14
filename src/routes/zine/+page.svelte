@@ -1,6 +1,7 @@
 <script>
-  // export let data;
-  import FlashAbout from './flashAbout.svelte';
+  export let data;
+  import FlashAbout from './zineAbout.svelte';
+  import CurrentEdition from './currentEdition.svelte';
 </script>
 
 <div class="yellow">
@@ -43,6 +44,7 @@
   </div>
 </div>
 
+<CurrentEdition {data}/>
 <FlashAbout/>
 
 <!-- <body>
