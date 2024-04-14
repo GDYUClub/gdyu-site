@@ -18,6 +18,10 @@
   </div>
 
   <article class="md:w-3/4 p-10">
+    <img src="{data.cover}" alt=""/>
+    <h1>{data.title}</h1>
+    <h2>{data.author}</h2>
+    <h3>{data.date}</h3>
     <svelte:component this={data.content}/>
   </article>
 </div>
