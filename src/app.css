@@ -41,6 +41,7 @@ article h1 {
     font-weight: 700;
     font-size: calc(28px + 1.5vw);
     line-height: calc(28px + 1.5vw);
+    padding-top: 24px;
 }
 article h2 {
     color: #ec25a0;
@@ -49,7 +50,14 @@ article h2 {
     font-size: 24px;
     line-height: 24px;
     padding-top: 10px;
-    padding-bottom: 10px;
+}
+article h3 {
+    color: #36bee1;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 10px;
 }
 
 article p {
