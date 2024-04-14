@@ -17,7 +17,7 @@
     <div class="flex lg:w-10/12 w-4/12">
         <video
             class="video m-auto"
-            src="assets/projects/demos/titledemo.mp4"
+            src="/assets/projects/demos/titledemo.mp4"
             autoplay
             muted
             buffered
@@ -53,7 +53,7 @@
         height: 50%;
         mask-size: 150%;
         mask-position: 50% 50%;
-        mask-image: url(assets/logo-invert.svg);
+        mask-image: url(/assets/logo-invert.svg);
     }
     
 </style>

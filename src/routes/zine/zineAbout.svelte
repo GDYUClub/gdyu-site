@@ -27,13 +27,13 @@
                     <p class="darkText cardTitleText text-center pt-4">TABS</p>
                     <p class="pinkText cardText text-center pt-4">[150-300 Words]</p>
                     <p class="darkText cardText text-center pt-4 px-4">The shortest articles in FLASH!, Tabs are for little thoughts about the games you've played; moments you loved, characters you connected to, places you remember</p>
-                    <img class="w-1/2 mx-auto py-8 mt-auto" src="assets/tabs.svg" alt="">
+                    <img class="w-1/2 mx-auto py-8 mt-auto" src="/assets/tabs.svg" alt="">
                 </div>
                 <div class="zineCard w-96 flex flex-col">
                     <p class="darkText cardTitleText text-center pt-4">PAGES</p>
                     <p class="pinkText cardText text-center pt-4">[300-700 Words]</p>
                     <p class="darkText cardText text-center pt-4 px-4">A good place for longer thoughts, Pages are for short personal essays about your experiences in games</p>
-                    <img class="w-1/2 mx-auto py-8 mt-auto" src="assets/pages.svg" alt="">
+                    <img class="w-1/2 mx-auto py-8 mt-auto" src="/assets/pages.svg" alt="">
                 </div>
                 <div class="zineCard w-96 flex flex-col">
                     <p class="darkText cardTitleText text-center pt-4">WINDOWS</p>
