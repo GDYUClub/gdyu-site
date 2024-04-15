@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <article class="md:w-3/4 p-10">
+  <article class="md:w-3/4 lg:pr-48 p-10">
     <img src="{data.cover}" alt=""/>
     <h1>{data.title}</h1>
     <h2>{data.author}</h2>

@@ -1,5 +1,16 @@
 <script>
     export let data;
+
+    function getSeason () {
+        let currentMonth = (new Date()).getMonth()
+        let yearNumber = (new Date()).getFullYear()
+        if (currentMonth <= 4)
+            return `WINTER ‘${yearNumber}`
+        else if (currentMonth <= 8)
+            return `SUMMER ‘${yearNumber}`
+        else
+            return `FALL ‘${yearNumber}`
+    }
 </script>
 
 <div class="dark w-full">
@@ -15,16 +26,27 @@
 
         <div class="w-10/12">
             <div class="yellowText blockHeaderText">
-                SPRING ‘24
+                {getSeason()}
             </div>
 
             <p class="mt-1 blueText">
                 LATEST ARTICLES BY OUR MEMBERS
             </p>
             
-            <div class="flex gap-4 flex-wrap mt-10">
-                <a href="{data.posts[0].path}" class="viewButton text-center px-10 py-5 rounded-xl">
-                    MORE <br> ARCTICLES
+            <div class="flex gap-4 flex-wrap mt-10 items-center items-stretch">
+                {#each data.posts.slice(0, 3) as post}
+                <a class="articleCard w-96" href="{post.path}">
+                    <div class="h-3/4 w-full !bg-center !bg-contain" style="background: url({post.meta.cover})"></div>
+                    <div class="h-1/4">
+                        <p class="darkText cardTitleText pt-4 truncate">{post.meta.title}</p>
+                        <p class="darkText cardText pt-2 truncate">{post.meta.author}</p>
+                    </div>
+                </a>
+                {/each}
+                <a href="{data.posts[0].path}" class="flex viewButton w-96 py-10">
+                    <div class="text-center m-auto">
+                        MORE <br> ARTICLES
+                    </div>
                 </a>
             </div>
         </div>
@@ -44,12 +66,38 @@
 </div>
 
 <style>
+    .cardTitleText {
+        font-family: 'Archivo Black';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .cardText {
+        font-family: 'Almarai';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .articleCard {
+        background-color: #F5D33D;
+        border-left: 1vw solid #F5D33D;
+        border-radius: 10px;
+        overflow: hidden;
+        aspect-ratio: 14/10;
+    }
+    .articleCard:hover {
+        background-color: #ec25a0;
+        border-left: 1vw solid #ec25a0;
+    }
+
     .viewButton {
         color: #F5D33D;
         background-color: #ec25a0;
         font-family: 'Archivo Black';
         font-size: calc(28px + 1.5vw);
         line-height: calc(28px + 1.5vw);
+        border-radius: 10px;
     }
     .viewButton:hover {
         color: #ec25a0;
