@@ -1,5 +1,5 @@
 <div class="flex yellow h-auto">
-    <p class="footerText darkText mx-auto py-10">© 2023 GDYU</p>
+    <p class="footerText darkText mx-auto py-10">© 2024 GDYU</p>
 </div>
 
 <style>
