@@ -1,3 +1,4 @@
+
 <script>
   import { onMount } from "svelte";
   import ProjectCard from "$lib/components/ui/project-card/project-card.svelte";
@@ -9,11 +10,10 @@
 
     jamGames.forEach((game) => {
       clubProjects.push({
-        id: "",
         name: game.game.title,
         author: game.game.user.name,
-        link: game.game.url,
-        coverImg: game.game.cover,
+        url: game.game.url,
+        image: game.game.cover,
       });
     });
 
