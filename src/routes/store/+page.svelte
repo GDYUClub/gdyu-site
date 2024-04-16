@@ -1,4 +1,6 @@
 <script>
+  import navMode from '$lib/navMode'
+  $navMode = "yellow"
   import { merchItems } from "$lib";
   /**
 	 gdyu merch list

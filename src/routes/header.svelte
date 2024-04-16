@@ -1,8 +1,10 @@
 <script>
-    import { page } from '$app/stores';
+    import { page } from '$app/stores'
+    import navMode from '$lib/navMode'
+
     function navTextColor (route) {
         let unselectedText = 'yellowText'
-        if ($page.url.pathname.startsWith('/zine/'))
+        if ($navMode == "yellow")
         {
             unselectedText = 'darkText'
             if (route == '/zine')
@@ -15,13 +17,7 @@
     }
 
     function navColor () {
-        let color = 'dark'
-        if ($page.url.pathname.startsWith('/zine/'))
-        {
-            color = 'yellow'
-        }
-
-        return color
+        return $navMode
     }
 </script>
 
