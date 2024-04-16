@@ -11,7 +11,7 @@ let isHovered = false
 
 <style>
    div img {
-    min-width:75px;
+    min-width:200px;
     width:20vw;
     max-width: 350px;
     border-left: 7px solid;
@@ -22,15 +22,9 @@ let isHovered = false
 
    div p{
     visibility: hidden;
-    position:relative;
-    top: -15%;
-    margin-bottom: -15%;
-    text-align: center;
     min-width:75px;
-    width:20vw;
-    max-width: 350px;
-    font-size: 80%;
     text-shadow:black 2px 2px;
+    width: auto;
    }
    .hidden{
     visibility: hidden;

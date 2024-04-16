@@ -36,7 +36,7 @@
 
         <div class="lg:ml-48 ml-10 lg:mr-36 mr-10 mt-28">
             <!-- TITLE -->
-            <div class="yellowTextBlockHeader">
+            <div class="yellowText blockHeaderText">
                 PROJECTS MADE BY OUR CLUB MEMBERS
             </div>
             <!-- PROJECT CARDS -->
