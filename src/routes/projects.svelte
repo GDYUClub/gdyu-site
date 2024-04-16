@@ -62,8 +62,8 @@
         color: #F5D33D;
         background-color: #ec25a0;
         font-family: 'Archivo Black';
-        font-size: calc(28px + 1.5vw);
-        line-height: calc(28px + 1.5vw);
+        font-size: calc(20px + 1.5vw);
+        line-height: calc(20px + 1.5vw);
         border-radius: 10px;
         min-width:200px;
         width:20vw;
