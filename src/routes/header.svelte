@@ -7,7 +7,8 @@
         if ($navMode == "yellow")
         {
             unselectedText = 'darkText'
-            if (route == '/zine')
+
+            if (route == '/zine' && $page.url.pathname.includes('/zine'))
             {
                 route = $page.url.pathname
             }
