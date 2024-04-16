@@ -1,49 +1,50 @@
-<script lang="ts">
-    import GalleryCard from '$lib/galleryCard.svelte';
-    import { onMount } from 'svelte';
 
-    export let clubProjects: GalleryItem[] = []
+<script>
+  import { onMount } from "svelte";
+  import ProjectCard from "$lib/components/ui/project-card/project-card.svelte";
+  export let clubProjects = [];
 
-    onMount(async () => {
-        const response = await fetch('/itch-api')
-        let jamGames = (await response.json()).data
-        
-        jamGames.forEach((game: { game: { user: { name: string }; title: string; url: string; cover: string; }; }) => {
-            clubProjects.push(
-                {
-                    id: '',
-                    name: game.game.title,
-                    author: game.game.user.name,
-                    link: game.game.url,
-                    coverImg: game.game.cover
-                }
-            )
-        });
+  onMount(async () => {
+    const response = await fetch("/api/jam-games");
+    let jamGames = (await response.json()).data;
 
-        clubProjects = clubProjects;
-    })
+    jamGames.forEach((game) => {
+      clubProjects.push({
+        name: game.game.title,
+        author: game.game.user.name,
+        url: game.game.url,
+        image: game.game.cover,
+      });
+    });
+
+    clubProjects = clubProjects;
+  });
 </script>
 
-<div class="container mx-auto flex flex-col justify-center items-center">
+<div class="flex dark h-1000">
+    <div class="block w-full">
+        <div class="absolute lineBlockRight">
+            <div class="w-1/12">
+                <div>
+                    <div class="dotV pink" />
+                    <div class="lineV pink" />
+                    <div class="diamondNarrowV pink" />
+                </div>
+            </div>
+      </div>
 
-    <h1 class="h1 text-center pt-20">Projects made by our club members</h1>
-    <div class="max-w-3xl gallery">
-		<section class="mt-20 mb-20 grid grid-cols-2 md:grid-cols-3 gap-1">
-			{#each clubProjects as project}
-				<GalleryCard galleryItem={project} />
-			{/each}
-		</section>
-	</div>
 
-    <section>
-        <div class="mb-20 flex-row justify-center items-center">
-            <a href="/" class="btn variant-filled">Home</a>
+        <div class="lg:ml-48 ml-10 lg:mr-36 mr-10 mt-28">
+            <!-- TITLE -->
+            <div class="yellowText blockHeaderText">
+                PROJECTS MADE BY OUR CLUB MEMBERS
+            </div>
+            <!-- PROJECT CARDS -->
+            <div class="py-5 flex gap-4 flex-wrap">
+             {#each clubProjects as project }
+              <ProjectCard project={project} />
+             {/each}
+            </div>
         </div>
-    </section>
-
+    </div>
 </div>
-<footer>
-	<div class="flex justify-center items-center h-10 bg-[#19032b] w-screen shadow-">
-		Made with 🕹️ from the GDYU Team
-	</div>
-</footer>

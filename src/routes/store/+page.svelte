@@ -1,40 +1,21 @@
-<script lang="ts">
-	import ProductCard from '../../lib/productCard.svelte';
-
-	const products: Product[] = [
-		{
-			id: '1',
-			name: 'Coffee',
-			price: 5
-		},
-		{
-			id: '2',
-			name: 'sunsdfsdfsdglasses',
-			price: 5
-		},
-		{
-			id: '3',
-			name: 'Water Bottle',
-			price: 5
-		}
-	];
+<script>
+  import { merchItems } from "$lib";
+  /**
+	 gdyu merch list
+	 pull from a json list of all merch data, with prices, images, descriptions
+	 link to where to submit the order
+	*/
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<h1 class="h1 text-center pt-20">I said coming soon! Come back later!</h1>
-	
-	<!--
-	<div class="grid grid-cols-3 gap-4">
-		<div class="col-span-3">
-			<h1>gdyu store</h1>
-		</div>
-		{#each products as product}
-			<ProductCard product = {product} />
-		{/each}
-		<div class="col-span-3">
-			<button class="btn variant-filled-primary">checkout</button>
-		</div>
-	</div>
-
-	-->
+<div class="flex flex-col dark" style="height: 85vh">
+  <img class="w-96 m-auto mb-0" src="/assets/pocket_shib.png" alt=""/>
+  <div class="pinkText blockHeaderText m-auto mt-10">COMING SOON...</div>
 </div>
+
+<!--
+Object.entries() converts an Object into an array of arrays, each sub array first index is the a key and the second index is a value
+-->
+<!-- {#each Object.entries(merchItems) as merchItem}
+  <a href={"merch/" + merchItem[0]}>{merchItem[1].name}</a>
+  <br />
+{/each} -->
