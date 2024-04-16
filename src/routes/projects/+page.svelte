@@ -1,23 +1,25 @@
 
 <script>
-  import { onMount } from "svelte";
-  import ProjectCard from "$lib/components/ui/project-card/project-card.svelte";
-  export let clubProjects = [];
+    import navMode from '$lib/navMode'
+    $navMode = "yellow"
+    import { onMount } from "svelte";
+    import ProjectCard from "$lib/components/ui/project-card/project-card.svelte";
+    export let clubProjects = [];
 
-  onMount(async () => {
-    const response = await fetch("/api/jam-games");
-    let jamGames = (await response.json()).data;
+    onMount(async () => {
+        const response = await fetch("/api/jam-games");
+        let jamGames = (await response.json()).data;
 
-    jamGames.forEach((game) => {
-      clubProjects.push({
-        name: game.game.title,
-        author: game.game.user.name,
-        url: game.game.url,
-        image: game.game.cover,
-      });
-    });
+        jamGames.forEach((game) => {
+        clubProjects.push({
+            name: game.game.title,
+            author: game.game.user.name,
+            url: game.game.url,
+            image: game.game.cover,
+        });
+        });
 
-    clubProjects = clubProjects;
+        clubProjects = clubProjects;
   });
 </script>
 

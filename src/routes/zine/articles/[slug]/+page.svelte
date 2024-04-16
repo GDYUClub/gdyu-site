@@ -1,6 +1,8 @@
 <script>
   export let data;
   import { page } from '$app/stores';
+  import navMode from '$lib/navMode'
+  $navMode = "dark"
 </script>
 
 <div class="flex md:flex-row flex-col dark">
