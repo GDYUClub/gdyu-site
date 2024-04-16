@@ -11,10 +11,10 @@
         min-width:200px;
         width:20vw;
         max-width: 350px;
+        height: auto;
         border-left: 10px solid;
         border-color: #F5D33D;
         border-radius: 5px;
-        height: auto;
         z-index: -1;
        }
 
