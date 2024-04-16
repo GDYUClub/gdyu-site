@@ -1,10 +1,9 @@
 <script>
     export let project
-    let isHovered = false
     </script>
 
-    <a href={project.url} target="_blank" on:mouseenter={()=> isHovered = true} on:mouseleave={()=> isHovered = false} >
-        <img class={isHovered ? 'gray':'nothing'} src={project.image} alt={project.name}>
+    <a href={project.url} target="_blank">
+        <img src={project.image} alt={project.name}>
     </a>
     <style>
        a img {
@@ -12,7 +11,7 @@
         min-width:200px;
         width:20vw;
         max-width: 350px;
-        border-left: 7px solid;
+        border-left: 10px solid;
         border-color: #F5D33D;
         border-radius: 5px;
         height: auto;
@@ -37,8 +36,8 @@
        .visible{
         visibility: visible;
        }
-       .gray{
-        filter:grayscale(1)
+       a img:hover{
+        border-color: #EC25A0;
        }
 
     </style>
