@@ -23,29 +23,27 @@
   });
 </script>
 
-<div class="flex dark h-1000">
-    <div class="block w-full">
-        <div class="absolute lineBlockRight">
-            <div class="w-1/12">
-                <div>
-                    <div class="dotV pink" />
-                    <div class="lineV pink" />
-                    <div class="diamondNarrowV pink" />
-                </div>
-            </div>
-      </div>
+<div class="dark w-full">
 
+    <div class="flex h-20 ml-10">
+        <div class="yellowText blockTopText my-auto">PROJECTS</div>
+    </div>
 
-        <div class="lg:ml-48 ml-10 lg:mr-36 mr-10 mt-28">
+    <div class="flex">
+        <div class="flex flex-col w-1/12">
+            
+        </div>
+
+        <div class="w-10/12">
             <!-- TITLE -->
             <div class="yellowText blockHeaderText">
                 PROJECTS MADE BY OUR CLUB MEMBERS
             </div>
             <!-- PROJECT CARDS -->
             <div class="py-5 flex gap-4 flex-wrap">
-             {#each clubProjects as project }
-              <ProjectCard project={project} />
-             {/each}
+                {#each clubProjects as project }
+                <ProjectCard project={project} />
+                {/each}
                 <a href="/projects" class="flex viewButton w-96 py-10">
                     <div class="text-center m-auto">
                         MORE <br> PROJECTS
@@ -53,6 +51,18 @@
                 </a>
             </div>
         </div>
+
+        <div class="flex flex-col w-1/12">
+            <div class="pink dot mx-auto -mb-1"/>
+            <div class="pink w-0.5 mx-auto grow"/>
+            <div class="pink diamond mx-auto -mt-1"/>
+        </div>
+    </div>
+
+    <div class="flex w-1/6 h-20">
+        <div class="pink dot my-auto -mr-1 ml-10"/>
+        <div class="pink h-0.5 my-auto grow"/>
+        <div class="pink diamond my-auto -ml-1"/>
     </div>
 </div>
 
@@ -62,8 +72,8 @@
         color: #F5D33D;
         background-color: #ec25a0;
         font-family: 'Archivo Black';
-        font-size: calc(28px + 1.5vw);
-        line-height: calc(28px + 1.5vw);
+        font-size: calc(20px + 1.5vw);
+        line-height: calc(20px + 1.5vw);
         border-radius: 10px;
         min-width:200px;
         width:20vw;
