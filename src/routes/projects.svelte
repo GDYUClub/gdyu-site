@@ -61,7 +61,7 @@
                 {#each clubProjects as project }
                 <ProjectCard project={project} />
                 {/each}
-                <a href="/projects" class="flex viewButton w-96 py-10">
+                <a href="projects" class="flex viewButton w-96 py-10">
                     <div class="text-center m-auto">
                         MORE <br> PROJECTS
                     </div>

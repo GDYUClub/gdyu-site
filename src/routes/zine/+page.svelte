@@ -59,7 +59,7 @@
   }
   .flashHero {
     height: 600px;
-    background-image: url('/assets/flash.svg');
+    background-image: url('assets/flash.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,7 +69,7 @@
     line-height: calc(10px + 1vw);
   }
   .flashApply {
-      background-image: url('/assets/pocket_shib.png');
+      background-image: url('assets/pocket_shib.png');
       background-position: 50% 70%;
       background-repeat: no-repeat;
       background-size: 110%;

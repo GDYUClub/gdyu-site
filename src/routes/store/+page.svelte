@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex flex-col dark" style="height: 85vh">
-  <img class="w-96 m-auto mb-0" src="/assets/pocket_shib.png" alt=""/>
+  <img class="w-96 m-auto mb-0" src="assets/pocket_shib.png" alt=""/>
   <div class="pinkText blockHeaderText m-auto mt-10">COMING SOON...</div>
 </div>
 
