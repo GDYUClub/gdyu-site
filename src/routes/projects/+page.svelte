@@ -7,13 +7,21 @@
     export let clubProjects = [];
 
     onMount(async () => {
-        const response = await fetch("/api/jam-games", {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        let jamGames = (await response.json()).data;
+        let jamGames = []
+        try {
+            const response = await fetch(`/api/jam-games`, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            const responseText = await response.text()
+            jamGames = JSON.parse(responseText).data
+        }
+        catch (error)
+        {
+            console.log(error)
+        }
 
         jamGames.forEach((game) => {
             clubProjects.push({
@@ -24,7 +32,7 @@
             });
         });
 
-        clubProjects = clubProjects;
+        clubProjects = clubProjects
   });
 </script>
 
