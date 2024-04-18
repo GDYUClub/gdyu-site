@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths'
     import { page } from '$app/stores'
     import navMode from '$lib/navMode'
 
@@ -41,7 +42,7 @@
 <div class="flex {navColor()} align-middle h-auto">
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-evenly">
         <div class="h-full px-2 flex">
-            <img src="/assets/shib.png" alt="" class="my-auto lg:h-3/5 h-4/5 object-contain"/>
+            <img src="{base}/assets/shib.png" alt="" class="my-auto lg:h-3/5 h-4/5 object-contain"/>
         </div>
         <div class="h-full px-2 w-16">
         </div>
