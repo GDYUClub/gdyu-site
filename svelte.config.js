@@ -12,7 +12,7 @@ const config = {
 		adapter: adapter({
 			pages:'build',
 			assets:'build',
-			fallback: undefined,
+			fallback: 'app.html',
 			precompress: false,
 			strict:true
 		}),
