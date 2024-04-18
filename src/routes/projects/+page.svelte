@@ -16,6 +16,10 @@
                 }
             })
             const responseText = await response.text()
+            if (responseText == "Not found")
+            {
+                return
+            }
             jamGames = JSON.parse(responseText).data
         }
         catch (error)

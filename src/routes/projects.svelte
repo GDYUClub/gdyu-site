@@ -6,20 +6,37 @@
 
   const preview_count = 7
   onMount(async () => {
-    const response = await fetch("/api/jam-games");
-    let jamGames = (await response.json()).data;
+    let jamGames = []
+        try {
+            const response = await fetch(`/api/jam-games`, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            const responseText = await response.text()
+            if (responseText == "Not found")
+            {
+                return
+            }
+            jamGames = JSON.parse(responseText).data
+        }
+        catch (error)
+        {
+            console.log(error)
+        }
 
-    jamGames.forEach((game) => {
-      clubProjects.push({
-        name: game.game.title,
-        author: game.game.user.name,
-        url: game.game.url,
-        image: game.game.cover,
-      });
-    });
+        jamGames.forEach((game) => {
+            clubProjects.push({
+                name: game.game.title,
+                author: game.game.user.name,
+                url: game.game.url,
+                image: game.game.cover,
+            });
+        });
 
-    clubProjects = clubProjects;
-    clubProjects = clubProjects.slice(0,7)
+        clubProjects = clubProjects
+        clubProjects = clubProjects.slice(0,7)
   });
 </script>
 

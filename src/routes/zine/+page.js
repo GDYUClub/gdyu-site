@@ -9,6 +9,12 @@ export const load = async ({ fetch }) => {
 			}
 		})
 		const responseText = await response.text()
+		if (responseText == "Not found")
+		{
+			return {
+				posts
+			}
+		}
 		posts = JSON.parse(responseText)
 	}
 	catch (error)
