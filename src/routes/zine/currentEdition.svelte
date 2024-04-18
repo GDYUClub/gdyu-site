@@ -43,7 +43,7 @@
                     </div>
                 </a>
                 {/each}
-                <a href="{data.posts[0].path}" class="flex viewButton w-96 py-10">
+                <a href="{data.posts.length > 0 ? data.posts[0].path : ''}" class="flex viewButton w-96 py-10">
                     <div class="text-center m-auto">
                         MORE <br> ARTICLES
                     </div>
