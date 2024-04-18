@@ -23,10 +23,9 @@ const config = {
 	extensions:['.svelte','.md'],
 
 	preprocess: [
-		vitePreprocess({}),
+		sveltePreprocess({ postcss: true }),
 		mdsvex({
 			extensions:['.md'],
-
 		})
 	]
 };
