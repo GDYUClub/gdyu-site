@@ -7,16 +7,21 @@
     export let clubProjects = [];
 
     onMount(async () => {
-        const response = await fetch("/api/jam-games");
+        const response = await fetch("/api/jam-games", {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
         let jamGames = (await response.json()).data;
 
         jamGames.forEach((game) => {
-        clubProjects.push({
-            name: game.game.title,
-            author: game.game.user.name,
-            url: game.game.url,
-            image: game.game.cover,
-        });
+            clubProjects.push({
+                name: game.game.title,
+                author: game.game.user.name,
+                url: game.game.url,
+                image: game.game.cover,
+            });
         });
 
         clubProjects = clubProjects;
