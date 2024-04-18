@@ -1,0 +1,105 @@
+/* ------- Common CSS that is used in multiple components ------- */
+
+/* Text */
+.blockTopText {
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+.blockHeaderTextLG {
+    font-family: 'Archivo Black';
+    font-weight: 400;
+    font-size: calc(24px + 4vw);
+    line-height: calc(24px + 4vw);
+}
+.blockHeaderText {
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: calc(28px + 1.5vw);
+    line-height: calc(28px + 1.5vw);
+}
+.pinkText {
+    color: #ec25a0;
+}
+.blueText {
+    color: #36bee1;
+}
+.darkText {
+    color: #120227;
+}
+.yellowText {
+    color: #F5D33D;
+}
+article h1 {
+    color: #F5D33D;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: calc(28px + 1.5vw);
+    line-height: calc(28px + 1.5vw);
+    padding-top: 24px;
+}
+article h2 {
+    color: #ec25a0;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+article h3 {
+    color: #36bee1;
+    font-family: 'Almarai';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 10px;
+}
+
+article p {
+    color: #FFFFFF;
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+p {
+    color: #FFFFFF;
+    font-family: 'Almarai';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+/* Background colors */
+.pink {
+    border-color: #ec25a0;
+    background-color: #ec25a0;
+}
+.blue {
+    border-color: #36bee1;
+    background-color: #36bee1;
+}
+.dark {
+    border-color: #120227;
+    background-color: #120227;
+}
+.yellow {
+    border-color: #F5D33D;
+    background-color: #F5D33D;
+}
+
+/* Lines */
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+.diamond {
+    height: 8px;
+    width: 8px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+/* Other */
