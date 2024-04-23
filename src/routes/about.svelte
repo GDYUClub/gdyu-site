@@ -6,7 +6,7 @@
 
     <div class="flex">
         <div class="flex flex-col w-1/12">
-            
+
         </div>
 
         <div class="w-10/12">
@@ -24,7 +24,7 @@
             <p class="mt-10">
                 GDYU began as a small Discord server. Without proper registration, Brooks promoted GDYU as an “unofficial club”. People began showing up— enough for GDYU to apply as a real club, and in January 2022, our application was approved, and GDYU entered the big leagues!
             </p>
-            
+
             <div class="aboutImg mt-10 xl:w-3/5"></div>
         </div>
 
@@ -45,12 +45,12 @@
 <style>
     .aboutImg {
         aspect-ratio: 2/1;
-        background: url('assets/GDYU_tabling_fall_2023.png');
+        background: url('/assets/GDYU_tabling_fall_2023.png');
         background-color: #F5D33D;
         background-position: 50% 50%;
         background-size: 110%;
         border-left: 1.5vw solid #F5D33D;
         border-radius: 10px;
     }
-    
+
 </style>

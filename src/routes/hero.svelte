@@ -13,7 +13,7 @@
             <div class="pinkTextSmallerHero">ART</div>
         </div>
     </div>
-    
+
     <div class="flex lg:w-10/12 w-4/12">
         <video
             class="video m-auto"
@@ -53,7 +53,7 @@
         height: 50%;
         mask-size: 150%;
         mask-position: 50% 50%;
-        mask-image: url('assets/logo-invert.svg');
+        mask-image: url('/assets/logo-invert.svg');
     }
-    
+
 </style>
