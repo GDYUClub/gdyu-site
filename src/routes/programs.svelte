@@ -6,7 +6,7 @@
 
     <div class="flex">
         <div class="flex flex-col w-1/12">
-            
+
         </div>
 
         <div class="w-10/12">
@@ -88,22 +88,22 @@
     }
 
     .eventCard .A {
-        background: url('assets/GDYU_blender_workshop.png');
+        background: url('/assets/GDYU_blender_workshop.png');
         background-position: 50% 90%;
         background-size: 100%;
     }
 
     .eventCard .B {
-        background: url('assets/GDYU_monthly_event.png');
+        background: url('/assets/GDYU_monthly_event.png');
         background-position: 50% 0%;
         background-size: 100%;
     }
 
     .eventCard .C {
-        background: url('assets/GDYU_talk_about_games.png');
+        background: url('/assets/GDYU_talk_about_games.png');
         background-position: 70% 0%;
         background-repeat: no-repeat;
         background-size: 125% 147%;
     }
-    
+
 </style>
