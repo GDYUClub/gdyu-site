@@ -1,4 +1,6 @@
 const jamIds = [
+    "387735", // YUDUM 6
+    "385223", // YUDUM 5
     "381550", // YUDUM 4
     "330428", // YUDUM 3
     "324065", // YUDUM 2
