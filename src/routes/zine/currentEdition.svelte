@@ -4,9 +4,9 @@
     function getSeason () {
         let currentMonth = (new Date()).getMonth()
         let yearNumber = (new Date()).getFullYear()
-        if (currentMonth <= 4)
+        if (currentMonth <= 3)
             return `WINTER ‘${yearNumber}`
-        else if (currentMonth <= 8)
+        else if (currentMonth <= 7)
             return `SUMMER ‘${yearNumber}`
         else
             return `FALL ‘${yearNumber}`
