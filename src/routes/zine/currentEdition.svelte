@@ -36,7 +36,7 @@
             <div class="flex gap-4 flex-wrap mt-10 items-center items-stretch">
                 {#each data.posts.slice(0, 3) as post}
                 <a class="articleCard w-96" href="{post.path}">
-                    <div class="h-3/4 w-full !bg-center !bg-contain" style="background: url({post.meta.cover})"></div>
+                    <div class="h-3/4 !bg-center !bg-cover" style="background: url({post.meta.cover})"></div>
                     <div class="h-1/4">
                         <p class="darkText cardTitleText pt-4 truncate">{post.meta.title}</p>
                         <p class="darkText cardText pt-2 truncate">{post.meta.author}</p>
