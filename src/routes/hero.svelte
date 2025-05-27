@@ -10,7 +10,7 @@
       <div class="pinkTextHero">GAME</div>
       <div class="pinkTextSmallerHero">DEV</div>
       <div class="pinkTextSmallerHero">DESIGN</div>
-      <div class="pinkTextSmallerHero">SCRUNKOS</div>
+      <div class="pinkTextSmallerHero">ART</div>
     </div>
   </div>
 
