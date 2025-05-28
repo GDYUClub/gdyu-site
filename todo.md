@@ -1,5 +1,7 @@
 summer 2025 updates:
 
+- update the site to the newest sveltekit (in seperate branch)
+- static export with all the assets included please
 - update the copy
 - large display's lead to gap between end of page and footer
 - move the about stuff to the about section, lead the header with what GDYU is
