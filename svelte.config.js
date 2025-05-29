@@ -13,6 +13,9 @@ const config = {
       precompress: false,
       strict: true,
     }),
+    paths: {
+      base: process.argv.includes("gdyu-site") ? "" : process.env.BASE_PATH,
+    },
   },
   extensions: [".svelte", ".md"],
 
