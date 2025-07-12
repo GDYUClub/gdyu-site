@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores";
+   import { base } from '$app/paths';
   import navMode from "$lib/navMode";
 
   function navTextColor(route) {
@@ -50,19 +51,19 @@
     </div>
 
     <nav class="lg:flex lg:w-4/6 w-2/4 h-full gap-4 my-auto text-center">
-      <a href="#" class="w-1/5">
+      <a href="{base}#" class="w-1/5">
         <div class="textNav {navTextColor('/')}">HOME</div>
       </a>
-      <a href="about" class="w-1/5">
+      <a href="{base}about" class="w-1/5">
         <div class="textNav {navTextColor('/about')}">ABOUT</div>
       </a>
-      <a href="projects" class="w-1/5">
+      <a href="{base}projects" class="w-1/5">
         <div class="textNav {navTextColor('/projects')}">PROJECTS</div>
       </a>
-      <a href="zine" class="w-1/5">
+      <a href="{base}zine" class="w-1/5">
         <div class="textNav {navTextColor('/zine')}">ZINE</div>
       </a>
-      <a href="store" class="w-1/5">
+      <a href="{base}store" class="w-1/5">
         <div class="textNav {navTextColor('/store')}">STORE</div>
       </a>
     </nav>

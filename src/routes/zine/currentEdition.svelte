@@ -1,6 +1,6 @@
 <script>
     export let data;
-
+    import { base } from '$app/paths';
     function getSeason () {
         let currentMonth = (new Date()).getMonth()
         let yearNumber = (new Date()).getFullYear()
@@ -35,7 +35,7 @@
             
             <div class="flex gap-4 flex-wrap mt-10 items-center items-stretch">
                 {#each data.posts.slice(0, 3) as post}
-                <a class="articleCard w-96" href="{post.path}">
+                <a class="articleCard w-96" href="{base}{post.path}">
                     <div class="h-3/4 !bg-center !bg-cover" style="background: url({post.meta.cover})"></div>
                     <div class="h-1/4">
                         <p class="darkText cardTitleText pt-4 truncate">{post.meta.title}</p>
@@ -43,7 +43,7 @@
                     </div>
                 </a>
                 {/each}
-                <a href="{data.posts.length > 0 ? data.posts[0].path : ''}" class="flex viewButton w-96 py-10">
+                <a href="{base}{data.posts.length > 0 ? data.posts[0].path : ''}" class="flex viewButton w-96 py-10">
                     <div class="text-center m-auto">
                         MORE <br> ARTICLES
                     </div>
