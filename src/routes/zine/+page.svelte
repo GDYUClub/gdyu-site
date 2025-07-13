@@ -3,6 +3,7 @@
     import FlashAbout from './zineAbout.svelte';
     import CurrentEdition from './currentEdition.svelte';
     import navMode from '$lib/navMode'
+    import { base } from '$app/paths';
     $navMode = "dark"
 </script>
 
@@ -14,7 +15,7 @@
             <div class="blue diamond mx-auto -mt-1 mb-10"/>
         </div>
 
-        <div class="w-10/12 flex flex-col flashHero justify-center">
+        <div class="w-10/12 flex flex-col flashHero justify-center" style={`background-image: url('${base}/assets/flash.svg');`}>
             <div class="mx-auto">
                 <p class="darkText">GDYU Presents...</p>
                 <div class="pinkText pinkTextFlash mx-auto z-10">FLASH!</div>
@@ -29,7 +30,7 @@
         </div>
     </div>
 
-    <div class="flex pink w-full rounded-t-3xl flashApply">
+    <div class="flex pink w-full rounded-t-3xl flashApply" style={`background-image: url('${base}/assets/pocket_shib.png');`}>
         <div class="flex flex-col w-1/12">
         <div class="blue dot mx-auto -mb-1 mt-10"/>
         <div class="blue w-0.5 mx-auto grow"/>
@@ -59,7 +60,6 @@
   }
   .flashHero {
     height: 600px;
-    background-image: url('/assets/flash.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,7 +69,6 @@
     line-height: calc(10px + 1vw);
   }
   .flashApply {
-      background-image: url('/assets/pocket_shib.png');
       background-position: 50% 70%;
       background-repeat: no-repeat;
       background-size: 110%;

@@ -2,6 +2,7 @@
   import navMode from '$lib/navMode'
   $navMode = "yellow"
   import { merchItems } from "$lib";
+  import { base } from '$app/paths';
   /**
 	 gdyu merch list
 	 pull from a json list of all merch data, with prices, images, descriptions
