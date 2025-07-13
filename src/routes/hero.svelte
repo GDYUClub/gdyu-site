@@ -21,7 +21,7 @@
   <div class="flex lg:w-10/12 w-4/12">
     <video
       class="video m-auto"
-      src={`${base}/assets/titledemo.mp4`}
+      src="{`${base}/assets/titledemo.mp4`}"
       autoplay
       muted
       buffered

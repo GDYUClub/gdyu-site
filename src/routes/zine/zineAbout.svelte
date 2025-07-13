@@ -1,3 +1,6 @@
+<script>
+    import { base } from '$app/paths';
+ </script>
 <div class="dark w-full">
 
     <div class="flex h-20 ml-10">
