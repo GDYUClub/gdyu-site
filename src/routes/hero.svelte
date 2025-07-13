@@ -1,7 +1,3 @@
-<script>
-    import { base } from '$app/paths';
-</script>
-
 <div class="flex yellow w-full">
   <div class="flex flex-col w-1/12">
     <div class="blue dot mx-auto -mb-1 mt-10" />
@@ -21,12 +17,11 @@
   <div class="flex lg:w-10/12 w-4/12">
     <video
       class="video m-auto"
-      src="{`${base}/assets/titledemo.mp4`}"
+      src="assets/titledemo.mp4"
       autoplay
       muted
       buffered
       loop
-      style={`mask-image: url('${base}/assets/logo-invert.svg');`}
     />
   </div>
 
@@ -57,6 +52,7 @@
     height: 50%;
     mask-size: 150%;
     mask-position: 50% 50%;
+    mask-image: url("/gdyu-site/assets/logo-invert.svg");
   }
 </style>
 

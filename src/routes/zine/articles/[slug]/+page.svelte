@@ -2,7 +2,6 @@
   export let data;
   import { page } from '$app/stores';
   import navMode from '$lib/navMode'
-  import { base } from '$app/paths';
   $navMode = "yellow"
 </script>
 
@@ -11,7 +10,7 @@
   <div class="md:w-1/4 pt-10 md:pl-10 px-10 ">
     <div class="yellow rounded px-2 py-2">
       {#each data.posts as post}
-      <a href={base}/{post.path} class="{$page.url.pathname == post.path ? 'pinkText' : 'darkText'}">
+      <a href={post.path} class="{$page.url.pathname == post.path ? 'pinkText' : 'darkText'}">
         <div class="w-full truncate articleText py-1">
           {post.meta.title}
         </div>

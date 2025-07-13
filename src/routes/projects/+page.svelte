@@ -8,7 +8,7 @@
   onMount(async () => {
     let jamGames = [];
     try {
-      const response = await fetch(`/api/jam-games`, {
+      const response = await fetch(`api/jam-games`, {
         method: "GET",
         headers: {
           Accept: "application/json",

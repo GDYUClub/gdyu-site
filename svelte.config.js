@@ -13,9 +13,12 @@ const config = {
       precompress: false,
       strict: true,
     }),
+    
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/gdyu-site' : '',
-    },
+      base: '/gdyu-site',
+      relative: false,
+    }
+    
   },
   extensions: [".svelte", ".md"],
 

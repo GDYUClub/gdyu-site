@@ -2,7 +2,7 @@ export const load = async ({ fetch }) => {
 
 	let posts = []
 	try {
-		const response = await fetch(`/api/posts`, {
+		const response = await fetch(`/gdyu-site/api/posts`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json'

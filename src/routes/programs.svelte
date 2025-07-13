@@ -1,6 +1,3 @@
-<script>
-  import { base } from '$app/paths';
-</script>
 <div class="dark w-full">
 
     <div class="flex h-20 ml-10">
@@ -30,21 +27,21 @@
 
             <div class="flex gap-4 flex-wrap mt-10">
                 <a class="eventCard w-96" href="https://www.youtube.com/watch?v=_0W3O5NUp0s" target="blank">
-                    <div class="A h-3/4 w-full" style={`background: url('${base}/assets/GDYU_blender_workshop.png'); background-position: 50% 90%;background-size: 100%;`}></div>
+                    <div class="A h-3/4 w-full"></div>
                     <div class="yellow h-1/4">
                         <p class="darkText cardTitleText pt-4">GAME DEV WORKSHOPS</p>
                         <p class="darkText cardText pt-4">Learn Unity, Godot, Blender, and more with our in-person workshops!</p>
                     </div>
                 </a>
                 <div class="eventCard w-96">
-                    <div class="B h-3/4 w-full" style={`background: url('${base}/assets/GDYU_monthly_event.png'); background-position: 50% 0%;background-size: 100%;`}></div>
+                    <div class="B h-3/4 w-full"></div>
                     <div class="yellow h-1/4">
                         <p class="darkText cardTitleText pt-4">MONTH-LONG EVENTS</p>
                         <p class="darkText cardText pt-4">Work with creative prompts.  Create something new throughout the month!</p>
                     </div>
                 </div>
                 <a class="eventCard w-96" href="https://www.youtube.com/watch?v=uSj66s3DvqY" target="blank">
-                    <div class="C h-3/4 w-full"style={`background: url('${base}/assets/GDYU_talk_about_games.png'); background-position: 70% 0%; background-repeat: no-repeat; background-size: 125% 147%;`}></div>
+                    <div class="C h-3/4 w-full"></div>
                     <div class="yellow h-1/4">
                         <p class="darkText cardTitleText pt-4">TALK ABOUT GAMES</p>
                         <p class="darkText cardText pt-4">PowerPoint night!  All members can sign up to be presenters.  Grab your popcorn!</p>
@@ -88,6 +85,25 @@
         border-radius: 10px;
         overflow: hidden;
         aspect-ratio: 9/12;
+    }
+
+    .eventCard .A {
+        background: url('/gdyu-site/assets/GDYU_blender_workshop.png');
+        background-position: 50% 90%;
+        background-size: 100%;
+    }
+
+    .eventCard .B {
+        background: url('/gdyu-site/assets/GDYU_monthly_event.png');
+        background-position: 50% 0%;
+        background-size: 100%;
+    }
+
+    .eventCard .C {
+        background: url('/gdyu-site/assets/GDYU_talk_about_games.png');
+        background-position: 70% 0%;
+        background-repeat: no-repeat;
+        background-size: 125% 147%;
     }
 
 </style>

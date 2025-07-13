@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import { base } from '$app/paths';
   import ProjectCard from "$lib/components/ui/project-card/project-card.svelte";
   export let clubProjects = [];
 
@@ -8,7 +7,7 @@
   onMount(async () => {
     let jamGames = [];
     try {
-      const response = await fetch(`/api/jam-games`, {
+      const response = await fetch(`api/jam-games`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -55,7 +54,7 @@
         {#each clubProjects as project}
           <ProjectCard {project} />
         {/each}
-        <a href="{base}/projects" class="flex viewButton w-96 py-10">
+        <a href="projects" class="flex viewButton w-96 py-10">
           <div class="text-center m-auto">
             MORE <br /> PROJECTS
           </div>
