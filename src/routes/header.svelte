@@ -42,7 +42,7 @@
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-evenly">
       <div class="h-full px-2 flex">
         <img
-          src="assets/shib.png"
+          src="{base}/assets/shib.png"
           alt=""
           class="my-auto lg:h-3/5 h-4/5 object-contain"
         />
@@ -51,19 +51,19 @@
     </div>
 
     <nav class="lg:flex lg:w-4/6 w-2/4 h-full gap-4 my-auto text-center">
-      <a href="{base}#" class="w-1/5">
+      <a href="{base}/#" class="w-1/5">
         <div class="textNav {navTextColor('/')}">HOME</div>
       </a>
-      <a href="{base}about" class="w-1/5">
+      <a href="{base}/about" class="w-1/5">
         <div class="textNav {navTextColor('/about')}">ABOUT</div>
       </a>
-      <a href="{base}projects" class="w-1/5">
+      <a href="{base}/projects" class="w-1/5">
         <div class="textNav {navTextColor('/projects')}">PROJECTS</div>
       </a>
-      <a href="{base}zine" class="w-1/5">
+      <a href="{base}/zine" class="w-1/5">
         <div class="textNav {navTextColor('/zine')}">ZINE</div>
       </a>
-      <a href="{base}store" class="w-1/5">
+      <a href="{base}/store" class="w-1/5">
         <div class="textNav {navTextColor('/store')}">STORE</div>
       </a>
     </nav>
@@ -76,7 +76,7 @@
           class="my-auto lg:h-3/5 h-4/5"
         >
           <img
-            src="assets/discord-mark-blue.svg"
+            src="{base}/assets/discord-mark-blue.svg"
             alt="Discord"
             class="h-full"
           />
@@ -88,7 +88,7 @@
           target="_blank"
           class="my-auto lg:h-3/5 h-4/5"
         >
-          <img src="assets/insta.svg" alt="Instagram" class="h-full" />
+          <img src="{base}/assets/insta.svg" alt="Instagram" class="h-full" />
         </a>
       </div>
       <div class="h-full px-2 flex">
@@ -97,7 +97,7 @@
           target="_blank"
           class="my-auto lg:h-3/5 h-4/5"
         >
-          <img src="assets/itch.svg" alt="Itch.io" class="h-full" />
+          <img src="{base}/assets/itch.svg" alt="Itch.io" class="h-full" />
         </a>
       </div>
     </div>
