@@ -2,6 +2,7 @@
   export let data;
   import { page } from '$app/stores';
   import navMode from '$lib/navMode'
+  import { base } from '$app/paths';
   $navMode = "yellow"
 </script>
 
@@ -20,7 +21,7 @@
   </div>
 
   <article class="md:w-3/4 lg:pr-48 p-10">
-    <img src="{base}/{data.cover}" alt=""/>
+    <img src="{data.cover}" alt=""/>
     <h1>{data.title}</h1>
     <h2>{data.author}</h2>
     <h3>{data.date}</h3>
