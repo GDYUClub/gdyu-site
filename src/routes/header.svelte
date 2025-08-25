@@ -41,24 +41,23 @@
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-evenly">
       <a href="#">
             <div class="h-full px-2 flex">
-                <img src="assets/shib.png" class="my-auto lg:h-3/5 h-4/5 object-contain" alt="" id="shib"
-                on:mouseenter={() => {document.getElementById("shib").src='assets/pocket_shib_opaque.png';}} on:mouseleave={() => {document.getElementById("shib").src='assets/shib.png';}}/>
+                <img src="assets/shib.png" class="my-auto lg:h-3/5 h-4/5 object-contain" alt="" id="shib"/>
             </div>
         </a>
       <div class="h-full px-2 w-16"></div>
     </div>
 
     <nav class="lg:flex lg:w-4/6 w-2/4 h-full gap-4 my-auto text-center">
-      <a href="#" class="w-1/5">
+      <a href="#" class="w-1/4">
         <div class="textNav {navTextColor('/')}">HOME</div>
       </a>
-      <a href="about" class="w-1/5">
+      <a href="about" class="w-1/4">
         <div class="textNav {navTextColor('/about')}">ABOUT</div>
       </a>
-      <a href="projects" class="w-1/5">
+      <a href="projects" class="w-1/4">
         <div class="textNav {navTextColor('/projects')}">PROJECTS</div>
       </a>
-      <a href="zine" class="w-1/5">
+      <a href="zine" class="w-1/4">
         <div class="textNav {navTextColor('/zine')}">ZINE</div>
       </a>
       <!-- <a href="store" class="w-1/5">
