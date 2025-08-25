@@ -61,9 +61,9 @@
       <a href="zine" class="w-1/5">
         <div class="textNav {navTextColor('/zine')}">ZINE</div>
       </a>
-      <a href="store" class="w-1/5">
+      <!-- <a href="store" class="w-1/5">
         <div class="textNav {navTextColor('/store')}">STORE</div>
-      </a>
+      </a> -->
     </nav>
 
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-center">
