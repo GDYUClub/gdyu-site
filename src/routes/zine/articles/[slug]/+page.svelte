@@ -35,4 +35,8 @@
     font-size: 18px;
     line-height: 18px;
   }
+  
+  .yellow a:hover{
+    Color: #ec25a0;
+  }
 </style>

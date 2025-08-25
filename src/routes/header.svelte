@@ -39,13 +39,12 @@
   <!-- Force re-render-->
   <div class="flex {navColor()} align-middle h-auto">
     <div class="flex lg:w-1/6 w-1/4 h-16 justify-evenly">
-      <div class="h-full px-2 flex">
-        <img
-          src="./assets/shib.png"
-          alt=""
-          class="my-auto lg:h-3/5 h-4/5 object-contain"
-        />
-      </div>
+      <a href="#">
+            <div class="h-full px-2 flex">
+                <img src="assets/shib.png" class="my-auto lg:h-3/5 h-4/5 object-contain" alt="" id="shib"
+                on:mouseenter={() => {document.getElementById("shib").src='assets/pocket_shib_opaque.png';}} on:mouseleave={() => {document.getElementById("shib").src='assets/shib.png';}}/>
+            </div>
+        </a>
       <div class="h-full px-2 w-16"></div>
     </div>
 
@@ -104,6 +103,12 @@
 {/key}
 
 <style>
+  img:hover{
+    transform:rotate(-10deg);
+  }
+  #shib:hover{
+    transform:rotate(10deg);
+  }
   .textNav {
     font-family: "Almarai";
     font-weight: 500;

@@ -87,6 +87,17 @@
         aspect-ratio: 9/12;
     }
 
+    .eventCard:hover {
+        border-left: 1vw solid #ec25a0;
+        background-color: #ec25a0;
+    }
+
+    .eventCard:hover .yellow {
+        color: #ec25a0;
+        background-color: #ec25a0;
+    }
+
+
     .eventCard .A {
         background: url('/gdyu-site/assets/GDYU_blender_workshop.png');
         background-position: 50% 90%;
