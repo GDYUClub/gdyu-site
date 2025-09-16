@@ -6,7 +6,7 @@
     $navMode = "dark"
 </script>
 
-<div class="yellow">
+<!-- <div class="yellow">
     <div class="flex yellow w-full">
         <div class="flex flex-col w-1/12">
             <div class="blue dot mx-auto -mb-1 mt-10"/>
@@ -44,8 +44,23 @@
             target="_blank">APPLY</a>
     </div>
   </div>
-</div>
+</div> -->
+    <div class="flex bg-pink-800 w-full h-full flashApply">
+      <div class="flex flex-col w-1/12">
+        <div class="blue dot mx-auto -mb-1 mt-10"/>
+        <div class="blue w-0.5 mx-auto grow"/>
+        <div class="blue diamond mx-auto -mt-1 mb-10"/>
+      </div>
 
+      <div class="w-10/12 flex flex-col items-center">
+        <img src="/gdyu-site/assets/full_zine_img.png" class="rounded-3xl mt-10 size-8/12"/>
+          <div class="yellowText mx-auto blockHeaderTextLG mt-10">WE WANT YOU!</div>
+          <div class="darkText mx-auto blockHeaderText">APPLICATIONS OPEN</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvayep1gzVcGPeAyZzyqEHGDhGKKwzyRoNsAJ2uNOCFnYsVw/viewform"
+              class="applyButton mx-auto mb-10 px-10 py-5 mt-10 rounded-xl"
+              target="_blank">APPLY</a>
+      </div>
+    </div>
 <CurrentEdition {data}/>
 <FlashAbout/>
 
