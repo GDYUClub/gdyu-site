@@ -45,7 +45,7 @@
     </div>
   </div>
 </div> -->
-    <div class="flex bg-pink-800 w-full h-full flashApply">
+    <div class="flex pink w-full h-full flashApply">
       <div class="flex flex-col w-1/12">
         <div class="blue dot mx-auto -mb-1 mt-10"/>
         <div class="blue w-0.5 mx-auto grow"/>
