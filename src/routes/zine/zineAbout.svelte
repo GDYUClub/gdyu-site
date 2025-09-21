@@ -11,36 +11,18 @@
 
         <div class="w-10/12">
             <div class="pinkText blockHeaderText">
-                FLASH!
+                Introducing GDYUzine: <span class="text-blue-400 font-thin">Creative Catalogue!</span>
             </div>
 
-            <p class="mt-1 blueText">
-                WHAT IS IT?
-            </p>
-
             <p class="mt-10">
-                FLASH! publishes short stories and articles about games and game development, online at gdyu.club and as a physical copy every 4 months. Stories and articles are divided into 3 groups:
+                GDYU's own showcase for <span class="text-pink-400 font-bold">art, games, music, writing, and anyone with a creative passion!</span><br> 
+                Creatives of <span class="text-pink-400 font-bold">all skill levels</span> are welcome and encouraged to sign-up if you would like to share your work with the YorkU community (and beyond!)<br>
+                <br>
+                <span class="text-pink-400 italic">Stay tuned for zine updates (including sign-up opportunities) in our Discord server!</span>
             </p>
             
             <div class="flex gap-4 flex-wrap mt-10 justify-center">
-                <div class="zineCard w-96 flex flex-col">
-                    <p class="darkText cardTitleText text-center pt-4">TABS</p>
-                    <p class="pinkText cardText text-center pt-4">[150-300 Words]</p>
-                    <p class="darkText cardText text-center pt-4 px-4">The shortest articles in FLASH!, Tabs are for little thoughts about the games you've played; moments you loved, characters you connected to, places you remember</p>
-                    <img class="w-1/2 mx-auto py-8 mt-auto" src="assets/tabs.svg" alt="">
-                </div>
-                <div class="zineCard w-96 flex flex-col">
-                    <p class="darkText cardTitleText text-center pt-4">PAGES</p>
-                    <p class="pinkText cardText text-center pt-4">[300-700 Words]</p>
-                    <p class="darkText cardText text-center pt-4 px-4">A good place for longer thoughts, Pages are for short personal essays about your experiences in games</p>
-                    <img class="w-1/2 mx-auto py-8 mt-auto" src="assets/pages.svg" alt="">
-                </div>
-                <div class="zineCard w-96 flex flex-col">
-                    <p class="darkText cardTitleText text-center pt-4">WINDOWS</p>
-                    <p class="pinkText cardText text-center pt-4">[500-700 Words]</p>
-                    <p class="darkText cardText text-center pt-4 px-4">With a different focus than other stories, Windows are for writing about the game industry and game development</p>
-                    <img class="w-1/2 mx-auto py-8 mt-auto" src="assets/windows.svg" alt="">
-                </div>
+                
             </div>
         </div>
 

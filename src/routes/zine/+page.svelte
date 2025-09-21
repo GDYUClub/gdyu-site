@@ -56,13 +56,14 @@
         <img src="/gdyu-site/assets/full_zine_img.png" class="rounded-3xl mt-10 size-8/12"/>
           <div class="yellowText mx-auto blockHeaderTextLG mt-10">WE WANT YOU!</div>
           <div class="darkText mx-auto blockHeaderText">APPLICATIONS OPEN</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvayep1gzVcGPeAyZzyqEHGDhGKKwzyRoNsAJ2uNOCFnYsVw/viewform"
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgeyfwI4hRCWYRhknPu_VAghhh2Xd-7cKZU3B4wtqlrAWvHQ/viewform?usp=dialog"
               class="applyButton mx-auto mb-10 px-10 py-5 mt-10 rounded-xl"
               target="_blank">APPLY</a>
       </div>
     </div>
-<CurrentEdition {data}/>
-<FlashAbout/>
+    <FlashAbout/>
+    <CurrentEdition {data}/>
+
 
 <style>
   .pinkTextFlash {
@@ -88,6 +89,7 @@
       background-position: 50% 70%;
       background-repeat: no-repeat;
       background-size: 110%;
+      background-blend-mode:screen;
   }
   .applyButton {
     color: #F5D33D;
